@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<vaje>
+  <vaja id="v01">
+    <ime>Počep s palico</ime>
+    <misicnaSkupina>noge</misicnaSkupina>
+    <oprema>palica</oprema>
+    <tezavnost>3</tezavnost>
+    <opis>Osnovna vaja za noge in zadnjico.</opis>
+  </vaja>
+  <vaja id="v02">
+    <ime>Mrtvi dvig</ime>
+    <misicnaSkupina>hrbet</misicnaSkupina>
+    <oprema>palica</oprema>
+    <tezavnost>4</tezavnost>
+    <opis>Dvig palice s tal z ravnim hrbtom.</opis>
+  </vaja>
+  <vaja id="v03">
+    <ime>Potisk s klopi</ime>
+    <misicnaSkupina>prsi</misicnaSkupina>
+    <oprema>palica</oprema>
+    <tezavnost>3</tezavnost>
+    <opis>Potisk palice z ležeče drže na klopi.</opis>
+  </vaja>
+  <vaja id="v04">
+    <ime>Sklece</ime>
+    <misicnaSkupina>prsi</misicnaSkupina>
+    <oprema>brez</oprema>
+    <tezavnost>2</tezavnost>
+    <opis>Potisk telesa od tal z lastno težo.</opis>
+  </vaja>
+  <vaja id="v05">
+    <ime>Zgibe</ime>
+    <misicnaSkupina>hrbet</misicnaSkupina>
+    <oprema>drog</oprema>
+    <tezavnost>4</tezavnost>
+    <opis>Dvig telesa na drogu z nadprijemom.</opis>
+  </vaja>
+  <vaja id="v06">
+    <ime>Izpadni korak</ime>
+    <misicnaSkupina>noge</misicnaSkupina>
+    <oprema>ročke</oprema>
+    <tezavnost>2</tezavnost>
+    <opis>Korak naprej s spuščanjem kolena.</opis>
+  </vaja>
+  <vaja id="v07">
+    <ime>Potisk čez glavo</ime>
+    <misicnaSkupina>ramena</misicnaSkupina>
+    <oprema>ročke</oprema>
+    <tezavnost>3</tezavnost>
+    <opis>Potisk ročk navpično nad glavo.</opis>
+  </vaja>
+  <vaja id="v08">
+    <ime>Upogib z ročkami</ime>
+    <misicnaSkupina>roke</misicnaSkupina>
+    <oprema>ročke</oprema>
+    <tezavnost>1</tezavnost>
+    <opis>Upogib komolcev za dvoglavo mišico.</opis>
+  </vaja>
+  <vaja id="v09">
+    <ime>Plank</ime>
+    <misicnaSkupina>trebuh</misicnaSkupina>
+    <oprema>brez</oprema>
+    <tezavnost>2</tezavnost>
+    <opis />
+  </vaja>
+  <vaja id="v10">
+    <ime>Veslanje s palico</ime>
+    <misicnaSkupina>hrbet</misicnaSkupina>
+    <oprema>palica</oprema>
+    <tezavnost>3</tezavnost>
+    <opis>Veslanje s palico v predklonu.</opis>
+  </vaja>
+  <vaja id="v11">
+    <ime>Stiskanje trebuha</ime>
+    <misicnaSkupina>trebuh</misicnaSkupina>
+    <oprema>brez</oprema>
+    <tezavnost>1</tezavnost>
+    <opis>Dvig trupa iz ležeče drže.</opis>
+  </vaja>
+  <vaja id="v12">
+    <ime>Dvig na prste</ime>
+    <misicnaSkupina>noge</misicnaSkupina>
+    <oprema>brez</oprema>
+    <tezavnost>1</tezavnost>
+    <opis />
+  </vaja>
+  <vaja id="v13">
+    <ime>Razteg ročk</ime>
+    <misicnaSkupina>prsi</misicnaSkupina>
+    <oprema>ročke</oprema>
+    <tezavnost>2</tezavnost>
+    <opis>Razteg ročk na klopi.</opis>
+  </vaja>
+  <vaja id="v14">
+    <ime>Triceps na škripcu</ime>
+    <misicnaSkupina>roke</misicnaSkupina>
+    <oprema>škripec</oprema>
+    <tezavnost>2</tezavnost>
+    <opis>Poteg vrvi navzdol za trojglavo mišico.</opis>
+  </vaja>
+  <vaja id="v15">
+    <ime>Dvig ročk v stran</ime>
+    <misicnaSkupina>ramena</misicnaSkupina>
+    <oprema>ročke</oprema>
+    <tezavnost>2</tezavnost>
+    <opis>Dvig ročk v stran do višine ramen.</opis>
+  </vaja>
+</vaje>
