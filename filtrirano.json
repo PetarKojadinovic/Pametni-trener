@@ -1,0 +1,82 @@
+[
+  {
+    "id": "t001",
+    "datum": "2026-09-01",
+    "uporabnik": {
+      "id": "u01",
+      "ime": "Petar",
+      "priimek": "Kojadinović",
+      "cilj": "moč"
+    },
+    "vaja": {
+      "id": "v01",
+      "ime": "Počep s palico",
+      "misicnaSkupina": "noge",
+      "oprema": "palica"
+    },
+    "serije": 4,
+    "ponovitve": 8,
+    "tezaBremena": 100.0,
+    "trajanjeMin": 20
+  },
+  {
+    "id": "t003",
+    "datum": "2026-09-02",
+    "uporabnik": {
+      "id": "u02",
+      "ime": "Ana",
+      "priimek": "Novak",
+      "cilj": "hujšanje"
+    },
+    "vaja": {
+      "id": "v06",
+      "ime": "Izpadni korak",
+      "misicnaSkupina": "noge",
+      "oprema": "ročke"
+    },
+    "serije": 3,
+    "ponovitve": 12,
+    "tezaBremena": 10.0,
+    "trajanjeMin": 15
+  },
+  {
+    "id": "t009",
+    "datum": "2026-09-07",
+    "uporabnik": {
+      "id": "u05",
+      "ime": "Luka",
+      "priimek": "Krajnc",
+      "cilj": "moč"
+    },
+    "vaja": {
+      "id": "v01",
+      "ime": "Počep s palico",
+      "misicnaSkupina": "noge",
+      "oprema": "palica"
+    },
+    "serije": 5,
+    "ponovitve": 5,
+    "tezaBremena": 120.0,
+    "trajanjeMin": 22
+  },
+  {
+    "id": "t013",
+    "datum": "2026-09-12",
+    "uporabnik": {
+      "id": "u08",
+      "ime": "Eva",
+      "priimek": "Mlakar",
+      "cilj": "hujšanje"
+    },
+    "vaja": {
+      "id": "v12",
+      "ime": "Dvig na prste",
+      "misicnaSkupina": "noge",
+      "oprema": "brez"
+    },
+    "serije": 4,
+    "ponovitve": 20,
+    "tezaBremena": null,
+    "trajanjeMin": 8
+  }
+]

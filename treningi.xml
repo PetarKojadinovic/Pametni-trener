@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+<treningi>
+  <trening id="t001" uporabnikId="u01" vajaId="v01">
+    <datum>2026-09-01</datum>
+    <serije>4</serije>
+    <ponovitve>8</ponovitve>
+    <tezaBremena>100.0</tezaBremena>
+    <trajanjeMin>20</trajanjeMin>
+  </trening>
+  <trening id="t002" uporabnikId="u01" vajaId="v03">
+    <datum>2026-09-01</datum>
+    <serije>4</serije>
+    <ponovitve>8</ponovitve>
+    <tezaBremena>80.0</tezaBremena>
+    <trajanjeMin>18</trajanjeMin>
+  </trening>
+  <trening id="t003" uporabnikId="u02" vajaId="v06">
+    <datum>2026-09-02</datum>
+    <serije>3</serije>
+    <ponovitve>12</ponovitve>
+    <tezaBremena>10.0</tezaBremena>
+    <trajanjeMin>15</trajanjeMin>
+  </trening>
+  <trening id="t004" uporabnikId="u02" vajaId="v09">
+    <datum>2026-09-02</datum>
+    <serije>3</serije>
+    <ponovitve>1</ponovitve>
+    <tezaBremena />
+    <trajanjeMin>6</trajanjeMin>
+  </trening>
+  <trening id="t005" uporabnikId="u03" vajaId="v02">
+    <datum>2026-09-03</datum>
+    <serije>5</serije>
+    <ponovitve>5</ponovitve>
+    <tezaBremena>140.0</tezaBremena>
+    <trajanjeMin>25</trajanjeMin>
+  </trening>
+  <trening id="t006" uporabnikId="u03" vajaId="v10">
+    <datum>2026-09-03</datum>
+    <serije>4</serije>
+    <ponovitve>10</ponovitve>
+    <tezaBremena>70.0</tezaBremena>
+    <trajanjeMin>20</trajanjeMin>
+  </trening>
+  <trening id="t007" uporabnikId="u04" vajaId="v04">
+    <datum>2026-09-05</datum>
+    <serije>3</serije>
+    <ponovitve>15</ponovitve>
+    <tezaBremena />
+    <trajanjeMin>10</trajanjeMin>
+  </trening>
+  <trening id="t008" uporabnikId="u05" vajaId="v05">
+    <datum>2026-09-07</datum>
+    <serije>4</serije>
+    <ponovitve>6</ponovitve>
+    <tezaBremena />
+    <trajanjeMin>12</trajanjeMin>
+  </trening>
+  <trening id="t009" uporabnikId="u05" vajaId="v01">
+    <datum>2026-09-07</datum>
+    <serije>5</serije>
+    <ponovitve>5</ponovitve>
+    <tezaBremena>120.0</tezaBremena>
+    <trajanjeMin>22</trajanjeMin>
+  </trening>
+  <trening id="t010" uporabnikId="u06" vajaId="v11">
+    <datum>2026-09-08</datum>
+    <serije>3</serije>
+    <ponovitve>20</ponovitve>
+    <tezaBremena />
+    <trajanjeMin>8</trajanjeMin>
+  </trening>
+  <trening id="t011" uporabnikId="u07" vajaId="v07">
+    <datum>2026-09-10</datum>
+    <serije>4</serije>
+    <ponovitve>10</ponovitve>
+    <tezaBremena>20.0</tezaBremena>
+    <trajanjeMin>15</trajanjeMin>
+  </trening>
+  <trening id="t012" uporabnikId="u07" vajaId="v08">
+    <datum>2026-09-10</datum>
+    <serije>3</serije>
+    <ponovitve>12</ponovitve>
+    <tezaBremena>14.0</tezaBremena>
+    <trajanjeMin>10</trajanjeMin>
+  </trening>
+  <trening id="t013" uporabnikId="u08" vajaId="v12">
+    <datum>2026-09-12</datum>
+    <serije>4</serije>
+    <ponovitve>20</ponovitve>
+    <tezaBremena />
+    <trajanjeMin>8</trajanjeMin>
+  </trening>
+  <trening id="t014" uporabnikId="u09" vajaId="v03">
+    <datum>2026-09-14</datum>
+    <serije>5</serije>
+    <ponovitve>5</ponovitve>
+    <tezaBremena>110.0</tezaBremena>
+    <trajanjeMin>25</trajanjeMin>
+  </trening>
+  <trening id="t015" uporabnikId="u09" vajaId="v02">
+    <datum>2026-09-14</datum>
+    <serije>3</serije>
+    <ponovitve>5</ponovitve>
+    <tezaBremena>160.0</tezaBremena>
+    <trajanjeMin>20</trajanjeMin>
+  </trening>
+  <trening id="t016" uporabnikId="u11" vajaId="v14">
+    <datum>2026-09-15</datum>
+    <serije>3</serije>
+    <ponovitve>12</ponovitve>
+    <tezaBremena>25.0</tezaBremena>
+    <trajanjeMin>12</trajanjeMin>
+  </trening>
+  <trening id="t017" uporabnikId="u12" vajaId="v15">
+    <datum>2026-09-16</datum>
+    <serije>3</serije>
+    <ponovitve>15</ponovitve>
+    <tezaBremena>6.0</tezaBremena>
+    <trajanjeMin>10</trajanjeMin>
+  </trening>
+  <trening id="t018" uporabnikId="u01" vajaId="v05">
+    <datum>2026-10-05</datum>
+    <serije>4</serije>
+    <ponovitve>7</ponovitve>
+    <tezaBremena />
+    <trajanjeMin>12</trajanjeMin>
+  </trening>
+</treningi>
