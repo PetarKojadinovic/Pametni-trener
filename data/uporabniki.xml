@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<uporabniki>
+  <uporabnik id="u01">
+    <ime>Petar</ime>
+    <priimek>Kojadinović</priimek>
+    <email>petar.k@example.com</email>
+    <datumRegistracije>2026-01-10</datumRegistracije>
+    <cilj>moč</cilj>
+    <teza>82.5</teza>
+  </uporabnik>
+  <uporabnik id="u02">
+    <ime>Ana</ime>
+    <priimek>Novak</priimek>
+    <email>ana.novak@example.com</email>
+    <datumRegistracije>2026-01-15</datumRegistracije>
+    <cilj>hujšanje</cilj>
+    <teza>68.0</teza>
+  </uporabnik>
+  <uporabnik id="u03">
+    <ime>Marko</ime>
+    <priimek>Horvat</priimek>
+    <email>marko.h@example.com</email>
+    <datumRegistracije>2026-02-01</datumRegistracije>
+    <cilj>mišična masa</cilj>
+    <teza>90.2</teza>
+  </uporabnik>
+  <uporabnik id="u04">
+    <ime>Maja</ime>
+    <priimek>Kovač</priimek>
+    <datumRegistracije>2026-02-12</datumRegistracije>
+    <cilj>hujšanje</cilj>
+    <teza>74.3</teza>
+  </uporabnik>
+  <uporabnik id="u05">
+    <ime>Luka</ime>
+    <priimek>Krajnc</priimek>
+    <email>luka.krajnc@example.com</email>
+    <datumRegistracije>2026-02-20</datumRegistracije>
+    <cilj>moč</cilj>
+    <teza>85.0</teza>
+  </uporabnik>
+  <uporabnik id="u06">
+    <ime>Nina</ime>
+    <priimek>Zupan</priimek>
+    <email>nina.zupan@example.com</email>
+    <datumRegistracije>2026-03-03</datumRegistracije>
+    <cilj>splošna kondicija</cilj>
+    <teza>61.8</teza>
+  </uporabnik>
+  <uporabnik id="u07">
+    <ime>Jan</ime>
+    <priimek>Potočnik</priimek>
+    <email>jan.p@example.com</email>
+    <datumRegistracije>2026-03-18</datumRegistracije>
+    <cilj>mišična masa</cilj>
+    <teza>77.4</teza>
+  </uporabnik>
+  <uporabnik id="u08">
+    <ime>Eva</ime>
+    <priimek>Mlakar</priimek>
+    <email>eva.mlakar@example.com</email>
+    <datumRegistracije>2026-04-02</datumRegistracije>
+    <cilj>hujšanje</cilj>
+    <teza>70.1</teza>
+  </uporabnik>
+  <uporabnik id="u09">
+    <ime>Tilen</ime>
+    <priimek>Vidmar</priimek>
+    <email>tilen.v@example.com</email>
+    <datumRegistracije>2026-04-25</datumRegistracije>
+    <cilj>moč</cilj>
+    <teza>95.6</teza>
+  </uporabnik>
+  <uporabnik id="u10">
+    <ime>Sara</ime>
+    <priimek>Golob</priimek>
+    <datumRegistracije>2026-05-07</datumRegistracije>
+    <cilj>splošna kondicija</cilj>
+    <teza>58.9</teza>
+  </uporabnik>
+  <uporabnik id="u11">
+    <ime>David</ime>
+    <priimek>Korošec</priimek>
+    <email>david.k@example.com</email>
+    <datumRegistracije>2026-05-30</datumRegistracije>
+    <cilj>mišična masa</cilj>
+    <teza>80.0</teza>
+  </uporabnik>
+  <uporabnik id="u12">
+    <ime>Lara</ime>
+    <priimek>Bizjak</priimek>
+    <email>lara.b@example.com</email>
+    <datumRegistracije>2026-06-14</datumRegistracije>
+    <cilj>hujšanje</cilj>
+    <teza>66.7</teza>
+  </uporabnik>
+</uporabniki>

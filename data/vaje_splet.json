@@ -1,0 +1,410 @@
+[
+  {
+    "id": "w001",
+    "ime": "Assisted Dip",
+    "url": "https://www.strengthlog.com/assisted-dips/",
+    "misicnaSkupina": "prsi",
+    "opis": "Assisted dips are a good alternative if the dips is too heavy or if you want to be able to do more reps without adding too much workload.",
+    "primarneMisice": [
+      "Chest",
+      "Front Deltoid",
+      "Triceps"
+    ],
+    "sekundarneMisice": [],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w002",
+    "ime": "Band-Assisted Bench Press",
+    "url": "https://www.strengthlog.com/band-assisted-bench-press/",
+    "misicnaSkupina": "prsi",
+    "opis": "The bench press against bands is a variation of the bench press in which resistance bands increase the tension as you press up. This makes it more challenging to lock out the lift, enhancing strength and power. It’s typically used to improve explosive strength and stability. Make sure to use the safety racks or to have a spotter while performing this exercise.",
+    "primarneMisice": [
+      "Chest",
+      "Front Deltoid"
+    ],
+    "sekundarneMisice": [
+      "Triceps"
+    ],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w003",
+    "ime": "Bar Dip",
+    "url": "https://www.strengthlog.com/bar-dip/",
+    "misicnaSkupina": "prsi",
+    "opis": "Text and graphics from the StrengthLog app.",
+    "primarneMisice": [
+      "Chest",
+      "Front Deltoid",
+      "Triceps"
+    ],
+    "sekundarneMisice": [],
+    "koraki": [
+      "Bench Dip",
+      "Bench Press",
+      "Close-Grip Push-Up"
+    ],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w004",
+    "ime": "Arnold Press",
+    "url": "https://www.strengthlog.com/arnold-press/",
+    "misicnaSkupina": "ramena",
+    "opis": "The Arnold Press is a variation of the dumbbell shoulder press that primarily targets the front and medial parts of the shoulder. It can improve both your shoulder strength and stability. The exercise is named after Arnold Schwarzenegger.",
+    "primarneMisice": [
+      "Front Deltoid"
+    ],
+    "sekundarneMisice": [
+      "Lateral Deltoid",
+      "Triceps"
+    ],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w005",
+    "ime": "Band External Shoulder Rotation",
+    "url": "https://www.strengthlog.com/band-external-shoulder-rotation/",
+    "misicnaSkupina": "ramena",
+    "opis": "External rotations against an elastic band train your posterior rotator cuff muscles, mainly infraspinatus.",
+    "primarneMisice": [
+      "Rotator Cuff (posterior)"
+    ],
+    "sekundarneMisice": [],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w006",
+    "ime": "Band Internal Shoulder Rotation",
+    "url": "https://www.strengthlog.com/band-internal-shoulder-rotation/",
+    "misicnaSkupina": "ramena",
+    "opis": "Internal rotations against an elastic band train your anterior rotator cuff muscles (subscapularis).",
+    "primarneMisice": [
+      "Rotator Cuff (anterior)"
+    ],
+    "sekundarneMisice": [],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w007",
+    "ime": "Barbell Curl",
+    "url": "https://www.strengthlog.com/barbell-curl/",
+    "misicnaSkupina": "roke",
+    "opis": "Text and graphics from the StrengthLog app.",
+    "primarneMisice": [
+      "Biceps"
+    ],
+    "sekundarneMisice": [
+      "Forearm Flexors"
+    ],
+    "koraki": [
+      "Dumbbell Curl & Hammer Curl",
+      "Machine Bicep Curl",
+      "Kettlebell Curl",
+      "Preacher Curl",
+      "Bodyweight Curl"
+    ],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w008",
+    "ime": "Barbell Preacher Curl",
+    "url": "https://www.strengthlog.com/barbell-preacher-curl/",
+    "misicnaSkupina": "roke",
+    "opis": "Text and graphics from the StrengthLog app.",
+    "primarneMisice": [
+      "Biceps"
+    ],
+    "sekundarneMisice": [
+      "Forearm Flexors"
+    ],
+    "koraki": [
+      "Dumbbell Preacher Curl",
+      "Machine Bicep Curl",
+      "Barbell Curl",
+      "Bodyweight Curl"
+    ],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w009",
+    "ime": "Bayesian Curl",
+    "url": "https://www.strengthlog.com/bayesian-curl/",
+    "misicnaSkupina": "roke",
+    "opis": "The Bayesian Curl effectively isolates the biceps by maintaining constant tension from the cable and provides a greater range of motion than traditional curls.",
+    "primarneMisice": [
+      "Biceps"
+    ],
+    "sekundarneMisice": [
+      "Forearm Flexors"
+    ],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w010",
+    "ime": "Air Squat",
+    "url": "https://www.strengthlog.com/air-squat/",
+    "misicnaSkupina": "noge",
+    "opis": "The air squat is a classic exercise that requires no equipment. For the beginner, this exercise might initiate a strength gain all on its own, and for the more experienced trainee it might serve as a mobility-increasing exercise, warm-up or rehabilitation. You can aid your balance in this exercise by holding out your arms in front of you, or even holding a light weight, like in a goblet squat .",
+    "primarneMisice": [
+      "Quads",
+      "Glutes",
+      "Adductors"
+    ],
+    "sekundarneMisice": [
+      "Calves"
+    ],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w011",
+    "ime": "Banded Hip March",
+    "url": "https://www.strengthlog.com/banded-hip-march/",
+    "misicnaSkupina": "noge",
+    "opis": "The banded hip march is an exercise designed to strengthen the hip flexors. Make sure to keep your upper body stable and avoid leaning backward during the movement. Perform the exercise slowly and with control, allowing the hip flexors to do the work.",
+    "primarneMisice": [
+      "Hip Flexor"
+    ],
+    "sekundarneMisice": [],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w012",
+    "ime": "Barbell Hack Squat",
+    "url": "https://www.strengthlog.com/barbell-hack-squat/",
+    "misicnaSkupina": "noge",
+    "opis": "The barbell hack squat is an old-school lift and an alternative to regular hack squats if you don’t have access to a machine.",
+    "primarneMisice": [
+      "Quads"
+    ],
+    "sekundarneMisice": [
+      "Glutes",
+      "Adductors",
+      "Lower Back",
+      "Trapezius",
+      "Forearm Flexors",
+      "Calves"
+    ],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w013",
+    "ime": "Assisted Chin-Up",
+    "url": "https://www.strengthlog.com/assisted-chin-up/",
+    "misicnaSkupina": "hrbet",
+    "opis": "Chin-ups train both your lats and arm flexors effectively. With a supinated grip like in this exercise, you make it possible to focus even more on your arm flexors, if you want to.",
+    "primarneMisice": [
+      "Lats"
+    ],
+    "sekundarneMisice": [
+      "Biceps",
+      "Rear Deltoids",
+      "Forearm Flexors",
+      "Rotator Cuffs"
+    ],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w014",
+    "ime": "Assisted Pull-Up",
+    "url": "https://www.strengthlog.com/assisted-pull-up/",
+    "misicnaSkupina": "hrbet",
+    "opis": "Pull-ups train both your lats and arm flexors effectively. By using a grip slightly wider than shoulder-width, you get a good range of motion and high muscle activation in all the working muscles.",
+    "primarneMisice": [
+      "Lats"
+    ],
+    "sekundarneMisice": [
+      "Biceps",
+      "Rear Deltoids",
+      "Forearm Flexors",
+      "Rotator Cuffs"
+    ],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w015",
+    "ime": "Back Extension",
+    "url": "https://www.strengthlog.com/back-extension/",
+    "misicnaSkupina": "hrbet",
+    "opis": "The back extension is a classic exercise for strengthening your lower back, glutes, and hamstrings.",
+    "primarneMisice": [
+      "Glutes",
+      "Lower Back"
+    ],
+    "sekundarneMisice": [
+      "Hamstrings"
+    ],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w016",
+    "ime": "Banded Side Kicks",
+    "url": "https://www.strengthlog.com/banded-side-kick/",
+    "misicnaSkupina": "zadnjica",
+    "opis": "Banded side kicks train the muscles that abduct (moves apart) your thighs, like your gluteus medius and parts of gluteus maximus.",
+    "primarneMisice": [
+      "Abductors"
+    ],
+    "sekundarneMisice": [
+      "Glutes"
+    ],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w017",
+    "ime": "Cable Glute Kickback",
+    "url": "https://www.strengthlog.com/cable-glute-kickback/",
+    "misicnaSkupina": "zadnjica",
+    "opis": "The cable kickback is an alternative to the bodyweight kickback, when you feel like you want to add some more weight.",
+    "primarneMisice": [
+      "Glutes"
+    ],
+    "sekundarneMisice": [
+      "Hamstrings",
+      "Adductors"
+    ],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w018",
+    "ime": "Cable Pull Through",
+    "url": "https://www.strengthlog.com/cable-pull-through/",
+    "misicnaSkupina": "zadnjica",
+    "opis": "This exercise isolates the muscles that extend your hips, primarily the glutes. Because the direction of resistance comes from behind you, you won’t get the same rest in the top position that you often get with free weights . This means that your glutes will be under more constant tension, which might be beneficial for muscle growth.",
+    "primarneMisice": [
+      "Glutes"
+    ],
+    "sekundarneMisice": [
+      "Lower Back",
+      "Hamstrings",
+      "Adductors"
+    ],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w019",
+    "ime": "Ball Slams",
+    "url": "https://www.strengthlog.com/ball-slams/",
+    "misicnaSkupina": "trebuh",
+    "opis": "The ball slam is an excellent compound exercise that will work out a variety of muscles and raise your heart rate at the same time. As a bonus, you get to release some stress by slamming a ball as hard as possible into the ground.",
+    "primarneMisice": [
+      "Lats",
+      "Abs",
+      "Obliques"
+    ],
+    "sekundarneMisice": [
+      "Glutes",
+      "Front Deltoids"
+    ],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w020",
+    "ime": "Bicycle Crunch",
+    "url": "https://www.strengthlog.com/bicycle-crunch/",
+    "misicnaSkupina": "trebuh",
+    "opis": "The bicycle crunch is a classic bodyweight core exercise that targets the rectus abdominus and obliques. It combines spinal flexion with rotation, making it effective for building both six-pack definition and rotational core strength.",
+    "primarneMisice": [
+      "Obliques"
+    ],
+    "sekundarneMisice": [
+      "Abs",
+      "Hip Flexor"
+    ],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w021",
+    "ime": "Cable Crunch",
+    "url": "https://www.strengthlog.com/cable-crunch/",
+    "misicnaSkupina": "trebuh",
+    "opis": "The cable crunch is an exercise where you have a little more control over the resistance compared to regular crunches , and also get a good range of motion.",
+    "primarneMisice": [
+      "Abs"
+    ],
+    "sekundarneMisice": [
+      "Obliques"
+    ],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w022",
+    "ime": "Lying Neck Curl",
+    "url": "https://www.strengthlog.com/lying-neck-curl/",
+    "misicnaSkupina": "vrat",
+    "opis": "The neck curl is an isolation exercise that targets the muscles on the front of the neck. It builds strength and stability in the neck and supports posture, reduces injury risk, and benefits athletes, especially in contact sports. You can do it without any resistance or use a weight plate to progressively overload the neck flexors for more strength, muscle growth, and endurance.",
+    "primarneMisice": [
+      "Neck"
+    ],
+    "sekundarneMisice": [],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w023",
+    "ime": "Lying Neck Extension",
+    "url": "https://www.strengthlog.com/lying-neck-extension/",
+    "misicnaSkupina": "vrat",
+    "opis": "The neck extension is an isolation exercise that targets the muscles on the back of the neck. It builds strength and stability in the neck and supports posture, reduces injury risk, and benefits athletes, especially in contact sports. You can do it without any resistance or use a weight plate to progressively overload the neck extensors for more strength, muscle growth, and endurance.",
+    "primarneMisice": [
+      "Neck"
+    ],
+    "sekundarneMisice": [],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w024",
+    "ime": "Prone Neck Bridge",
+    "url": "https://www.strengthlog.com/prone-neck-bridge/",
+    "misicnaSkupina": "vrat",
+    "opis": "The prone neck bridge on a bench strengthens the neck flexors and is a safer and more accessible alternative to the traditional wrestler’s bridge. It has long been used by martial artists, wrestlers, and gymnasts to build strength and stability in the neck and reduce the risk of injury.",
+    "primarneMisice": [
+      "Neck"
+    ],
+    "sekundarneMisice": [],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w025",
+    "ime": "Rowing Machine",
+    "url": "https://www.strengthlog.com/rowing-machine/",
+    "misicnaSkupina": "kardio",
+    "opis": "Rowing works almost your entire body, including your heart and lungs. Here are the main muscles worked on a rowing machine:",
+    "primarneMisice": [],
+    "sekundarneMisice": [],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  },
+  {
+    "id": "w026",
+    "ime": "Stationary Bike",
+    "url": "https://www.strengthlog.com/stationary-bike/",
+    "misicnaSkupina": "kardio",
+    "opis": "The main muscles worked in a stationary bike workout are your heart and lower body muscles:",
+    "primarneMisice": [],
+    "sekundarneMisice": [],
+    "koraki": [],
+    "datumPridobitve": "2026-10-26"
+  }
+]

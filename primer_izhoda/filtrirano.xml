@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<filtriraniTreningi>
+  <trening id="t001" uporabnikId="u01" vajaId="v01">
+    <datum>2026-09-01</datum>
+    <uporabnik>Petar Kojadinović</uporabnik>
+    <vaja>Počep s palico</vaja>
+    <misicnaSkupina>noge</misicnaSkupina>
+    <serije>4</serije>
+    <ponovitve>8</ponovitve>
+    <tezaBremena>100.0</tezaBremena>
+    <trajanjeMin>20</trajanjeMin>
+  </trening>
+  <trening id="t003" uporabnikId="u02" vajaId="v06">
+    <datum>2026-09-02</datum>
+    <uporabnik>Ana Novak</uporabnik>
+    <vaja>Izpadni korak</vaja>
+    <misicnaSkupina>noge</misicnaSkupina>
+    <serije>3</serije>
+    <ponovitve>12</ponovitve>
+    <tezaBremena>10.0</tezaBremena>
+    <trajanjeMin>15</trajanjeMin>
+  </trening>
+  <trening id="t009" uporabnikId="u05" vajaId="v01">
+    <datum>2026-09-07</datum>
+    <uporabnik>Luka Krajnc</uporabnik>
+    <vaja>Počep s palico</vaja>
+    <misicnaSkupina>noge</misicnaSkupina>
+    <serije>5</serije>
+    <ponovitve>5</ponovitve>
+    <tezaBremena>120.0</tezaBremena>
+    <trajanjeMin>22</trajanjeMin>
+  </trening>
+  <trening id="t013" uporabnikId="u08" vajaId="v12">
+    <datum>2026-09-12</datum>
+    <uporabnik>Eva Mlakar</uporabnik>
+    <vaja>Dvig na prste</vaja>
+    <misicnaSkupina>noge</misicnaSkupina>
+    <serije>4</serije>
+    <ponovitve>20</ponovitve>
+    <tezaBremena />
+    <trajanjeMin>8</trajanjeMin>
+  </trening>
+</filtriraniTreningi>

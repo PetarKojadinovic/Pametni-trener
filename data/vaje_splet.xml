@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='utf-8'?>
+<vajeSplet>
+  <vaja id="w001">
+    <ime>Assisted Dip</ime>
+    <misicnaSkupina>prsi</misicnaSkupina>
+    <url>https://www.strengthlog.com/assisted-dips/</url>
+    <opis>Assisted dips are a good alternative if the dips is too heavy or if you want to be able to do more reps without adding too much workload.</opis>
+    <primarneMisice>
+      <misica>Chest</misica>
+      <misica>Front Deltoid</misica>
+      <misica>Triceps</misica>
+    </primarneMisice>
+    <sekundarneMisice />
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w002">
+    <ime>Band-Assisted Bench Press</ime>
+    <misicnaSkupina>prsi</misicnaSkupina>
+    <url>https://www.strengthlog.com/band-assisted-bench-press/</url>
+    <opis>The bench press against bands is a variation of the bench press in which resistance bands increase the tension as you press up. This makes it more challenging to lock out the lift, enhancing strength and power. It’s typically used to improve explosive strength and stability. Make sure to use the safety racks or to have a spotter while performing this exercise.</opis>
+    <primarneMisice>
+      <misica>Chest</misica>
+      <misica>Front Deltoid</misica>
+    </primarneMisice>
+    <sekundarneMisice>
+      <misica>Triceps</misica>
+    </sekundarneMisice>
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w003">
+    <ime>Bar Dip</ime>
+    <misicnaSkupina>prsi</misicnaSkupina>
+    <url>https://www.strengthlog.com/bar-dip/</url>
+    <opis>Text and graphics from the StrengthLog app.</opis>
+    <primarneMisice>
+      <misica>Chest</misica>
+      <misica>Front Deltoid</misica>
+      <misica>Triceps</misica>
+    </primarneMisice>
+    <sekundarneMisice />
+    <koraki>
+      <korak>Bench Dip</korak>
+      <korak>Bench Press</korak>
+      <korak>Close-Grip Push-Up</korak>
+    </koraki>
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w004">
+    <ime>Arnold Press</ime>
+    <misicnaSkupina>ramena</misicnaSkupina>
+    <url>https://www.strengthlog.com/arnold-press/</url>
+    <opis>The Arnold Press is a variation of the dumbbell shoulder press that primarily targets the front and medial parts of the shoulder. It can improve both your shoulder strength and stability. The exercise is named after Arnold Schwarzenegger.</opis>
+    <primarneMisice>
+      <misica>Front Deltoid</misica>
+    </primarneMisice>
+    <sekundarneMisice>
+      <misica>Lateral Deltoid</misica>
+      <misica>Triceps</misica>
+    </sekundarneMisice>
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w005">
+    <ime>Band External Shoulder Rotation</ime>
+    <misicnaSkupina>ramena</misicnaSkupina>
+    <url>https://www.strengthlog.com/band-external-shoulder-rotation/</url>
+    <opis>External rotations against an elastic band train your posterior rotator cuff muscles, mainly infraspinatus.</opis>
+    <primarneMisice>
+      <misica>Rotator Cuff (posterior)</misica>
+    </primarneMisice>
+    <sekundarneMisice />
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w006">
+    <ime>Band Internal Shoulder Rotation</ime>
+    <misicnaSkupina>ramena</misicnaSkupina>
+    <url>https://www.strengthlog.com/band-internal-shoulder-rotation/</url>
+    <opis>Internal rotations against an elastic band train your anterior rotator cuff muscles (subscapularis).</opis>
+    <primarneMisice>
+      <misica>Rotator Cuff (anterior)</misica>
+    </primarneMisice>
+    <sekundarneMisice />
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w007">
+    <ime>Barbell Curl</ime>
+    <misicnaSkupina>roke</misicnaSkupina>
+    <url>https://www.strengthlog.com/barbell-curl/</url>
+    <opis>Text and graphics from the StrengthLog app.</opis>
+    <primarneMisice>
+      <misica>Biceps</misica>
+    </primarneMisice>
+    <sekundarneMisice>
+      <misica>Forearm Flexors</misica>
+    </sekundarneMisice>
+    <koraki>
+      <korak>Dumbbell Curl &amp; Hammer Curl</korak>
+      <korak>Machine Bicep Curl</korak>
+      <korak>Kettlebell Curl</korak>
+      <korak>Preacher Curl</korak>
+      <korak>Bodyweight Curl</korak>
+    </koraki>
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w008">
+    <ime>Barbell Preacher Curl</ime>
+    <misicnaSkupina>roke</misicnaSkupina>
+    <url>https://www.strengthlog.com/barbell-preacher-curl/</url>
+    <opis>Text and graphics from the StrengthLog app.</opis>
+    <primarneMisice>
+      <misica>Biceps</misica>
+    </primarneMisice>
+    <sekundarneMisice>
+      <misica>Forearm Flexors</misica>
+    </sekundarneMisice>
+    <koraki>
+      <korak>Dumbbell Preacher Curl</korak>
+      <korak>Machine Bicep Curl</korak>
+      <korak>Barbell Curl</korak>
+      <korak>Bodyweight Curl</korak>
+    </koraki>
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w009">
+    <ime>Bayesian Curl</ime>
+    <misicnaSkupina>roke</misicnaSkupina>
+    <url>https://www.strengthlog.com/bayesian-curl/</url>
+    <opis>The Bayesian Curl effectively isolates the biceps by maintaining constant tension from the cable and provides a greater range of motion than traditional curls.</opis>
+    <primarneMisice>
+      <misica>Biceps</misica>
+    </primarneMisice>
+    <sekundarneMisice>
+      <misica>Forearm Flexors</misica>
+    </sekundarneMisice>
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w010">
+    <ime>Air Squat</ime>
+    <misicnaSkupina>noge</misicnaSkupina>
+    <url>https://www.strengthlog.com/air-squat/</url>
+    <opis>The air squat is a classic exercise that requires no equipment. For the beginner, this exercise might initiate a strength gain all on its own, and for the more experienced trainee it might serve as a mobility-increasing exercise, warm-up or rehabilitation. You can aid your balance in this exercise by holding out your arms in front of you, or even holding a light weight, like in a goblet squat .</opis>
+    <primarneMisice>
+      <misica>Quads</misica>
+      <misica>Glutes</misica>
+      <misica>Adductors</misica>
+    </primarneMisice>
+    <sekundarneMisice>
+      <misica>Calves</misica>
+    </sekundarneMisice>
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w011">
+    <ime>Banded Hip March</ime>
+    <misicnaSkupina>noge</misicnaSkupina>
+    <url>https://www.strengthlog.com/banded-hip-march/</url>
+    <opis>The banded hip march is an exercise designed to strengthen the hip flexors. Make sure to keep your upper body stable and avoid leaning backward during the movement. Perform the exercise slowly and with control, allowing the hip flexors to do the work.</opis>
+    <primarneMisice>
+      <misica>Hip Flexor</misica>
+    </primarneMisice>
+    <sekundarneMisice />
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w012">
+    <ime>Barbell Hack Squat</ime>
+    <misicnaSkupina>noge</misicnaSkupina>
+    <url>https://www.strengthlog.com/barbell-hack-squat/</url>
+    <opis>The barbell hack squat is an old-school lift and an alternative to regular hack squats if you don’t have access to a machine.</opis>
+    <primarneMisice>
+      <misica>Quads</misica>
+    </primarneMisice>
+    <sekundarneMisice>
+      <misica>Glutes</misica>
+      <misica>Adductors</misica>
+      <misica>Lower Back</misica>
+      <misica>Trapezius</misica>
+      <misica>Forearm Flexors</misica>
+      <misica>Calves</misica>
+    </sekundarneMisice>
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w013">
+    <ime>Assisted Chin-Up</ime>
+    <misicnaSkupina>hrbet</misicnaSkupina>
+    <url>https://www.strengthlog.com/assisted-chin-up/</url>
+    <opis>Chin-ups train both your lats and arm flexors effectively. With a supinated grip like in this exercise, you make it possible to focus even more on your arm flexors, if you want to.</opis>
+    <primarneMisice>
+      <misica>Lats</misica>
+    </primarneMisice>
+    <sekundarneMisice>
+      <misica>Biceps</misica>
+      <misica>Rear Deltoids</misica>
+      <misica>Forearm Flexors</misica>
+      <misica>Rotator Cuffs</misica>
+    </sekundarneMisice>
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w014">
+    <ime>Assisted Pull-Up</ime>
+    <misicnaSkupina>hrbet</misicnaSkupina>
+    <url>https://www.strengthlog.com/assisted-pull-up/</url>
+    <opis>Pull-ups train both your lats and arm flexors effectively. By using a grip slightly wider than shoulder-width, you get a good range of motion and high muscle activation in all the working muscles.</opis>
+    <primarneMisice>
+      <misica>Lats</misica>
+    </primarneMisice>
+    <sekundarneMisice>
+      <misica>Biceps</misica>
+      <misica>Rear Deltoids</misica>
+      <misica>Forearm Flexors</misica>
+      <misica>Rotator Cuffs</misica>
+    </sekundarneMisice>
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w015">
+    <ime>Back Extension</ime>
+    <misicnaSkupina>hrbet</misicnaSkupina>
+    <url>https://www.strengthlog.com/back-extension/</url>
+    <opis>The back extension is a classic exercise for strengthening your lower back, glutes, and hamstrings.</opis>
+    <primarneMisice>
+      <misica>Glutes</misica>
+      <misica>Lower Back</misica>
+    </primarneMisice>
+    <sekundarneMisice>
+      <misica>Hamstrings</misica>
+    </sekundarneMisice>
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w016">
+    <ime>Banded Side Kicks</ime>
+    <misicnaSkupina>zadnjica</misicnaSkupina>
+    <url>https://www.strengthlog.com/banded-side-kick/</url>
+    <opis>Banded side kicks train the muscles that abduct (moves apart) your thighs, like your gluteus medius and parts of gluteus maximus.</opis>
+    <primarneMisice>
+      <misica>Abductors</misica>
+    </primarneMisice>
+    <sekundarneMisice>
+      <misica>Glutes</misica>
+    </sekundarneMisice>
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w017">
+    <ime>Cable Glute Kickback</ime>
+    <misicnaSkupina>zadnjica</misicnaSkupina>
+    <url>https://www.strengthlog.com/cable-glute-kickback/</url>
+    <opis>The cable kickback is an alternative to the bodyweight kickback, when you feel like you want to add some more weight.</opis>
+    <primarneMisice>
+      <misica>Glutes</misica>
+    </primarneMisice>
+    <sekundarneMisice>
+      <misica>Hamstrings</misica>
+      <misica>Adductors</misica>
+    </sekundarneMisice>
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w018">
+    <ime>Cable Pull Through</ime>
+    <misicnaSkupina>zadnjica</misicnaSkupina>
+    <url>https://www.strengthlog.com/cable-pull-through/</url>
+    <opis>This exercise isolates the muscles that extend your hips, primarily the glutes. Because the direction of resistance comes from behind you, you won’t get the same rest in the top position that you often get with free weights . This means that your glutes will be under more constant tension, which might be beneficial for muscle growth.</opis>
+    <primarneMisice>
+      <misica>Glutes</misica>
+    </primarneMisice>
+    <sekundarneMisice>
+      <misica>Lower Back</misica>
+      <misica>Hamstrings</misica>
+      <misica>Adductors</misica>
+    </sekundarneMisice>
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w019">
+    <ime>Ball Slams</ime>
+    <misicnaSkupina>trebuh</misicnaSkupina>
+    <url>https://www.strengthlog.com/ball-slams/</url>
+    <opis>The ball slam is an excellent compound exercise that will work out a variety of muscles and raise your heart rate at the same time. As a bonus, you get to release some stress by slamming a ball as hard as possible into the ground.</opis>
+    <primarneMisice>
+      <misica>Lats</misica>
+      <misica>Abs</misica>
+      <misica>Obliques</misica>
+    </primarneMisice>
+    <sekundarneMisice>
+      <misica>Glutes</misica>
+      <misica>Front Deltoids</misica>
+    </sekundarneMisice>
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w020">
+    <ime>Bicycle Crunch</ime>
+    <misicnaSkupina>trebuh</misicnaSkupina>
+    <url>https://www.strengthlog.com/bicycle-crunch/</url>
+    <opis>The bicycle crunch is a classic bodyweight core exercise that targets the rectus abdominus and obliques. It combines spinal flexion with rotation, making it effective for building both six-pack definition and rotational core strength.</opis>
+    <primarneMisice>
+      <misica>Obliques</misica>
+    </primarneMisice>
+    <sekundarneMisice>
+      <misica>Abs</misica>
+      <misica>Hip Flexor</misica>
+    </sekundarneMisice>
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w021">
+    <ime>Cable Crunch</ime>
+    <misicnaSkupina>trebuh</misicnaSkupina>
+    <url>https://www.strengthlog.com/cable-crunch/</url>
+    <opis>The cable crunch is an exercise where you have a little more control over the resistance compared to regular crunches , and also get a good range of motion.</opis>
+    <primarneMisice>
+      <misica>Abs</misica>
+    </primarneMisice>
+    <sekundarneMisice>
+      <misica>Obliques</misica>
+    </sekundarneMisice>
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w022">
+    <ime>Lying Neck Curl</ime>
+    <misicnaSkupina>vrat</misicnaSkupina>
+    <url>https://www.strengthlog.com/lying-neck-curl/</url>
+    <opis>The neck curl is an isolation exercise that targets the muscles on the front of the neck. It builds strength and stability in the neck and supports posture, reduces injury risk, and benefits athletes, especially in contact sports. You can do it without any resistance or use a weight plate to progressively overload the neck flexors for more strength, muscle growth, and endurance.</opis>
+    <primarneMisice>
+      <misica>Neck</misica>
+    </primarneMisice>
+    <sekundarneMisice />
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w023">
+    <ime>Lying Neck Extension</ime>
+    <misicnaSkupina>vrat</misicnaSkupina>
+    <url>https://www.strengthlog.com/lying-neck-extension/</url>
+    <opis>The neck extension is an isolation exercise that targets the muscles on the back of the neck. It builds strength and stability in the neck and supports posture, reduces injury risk, and benefits athletes, especially in contact sports. You can do it without any resistance or use a weight plate to progressively overload the neck extensors for more strength, muscle growth, and endurance.</opis>
+    <primarneMisice>
+      <misica>Neck</misica>
+    </primarneMisice>
+    <sekundarneMisice />
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w024">
+    <ime>Prone Neck Bridge</ime>
+    <misicnaSkupina>vrat</misicnaSkupina>
+    <url>https://www.strengthlog.com/prone-neck-bridge/</url>
+    <opis>The prone neck bridge on a bench strengthens the neck flexors and is a safer and more accessible alternative to the traditional wrestler’s bridge. It has long been used by martial artists, wrestlers, and gymnasts to build strength and stability in the neck and reduce the risk of injury.</opis>
+    <primarneMisice>
+      <misica>Neck</misica>
+    </primarneMisice>
+    <sekundarneMisice />
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w025">
+    <ime>Rowing Machine</ime>
+    <misicnaSkupina>kardio</misicnaSkupina>
+    <url>https://www.strengthlog.com/rowing-machine/</url>
+    <opis>Rowing works almost your entire body, including your heart and lungs. Here are the main muscles worked on a rowing machine:</opis>
+    <primarneMisice />
+    <sekundarneMisice />
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+  <vaja id="w026">
+    <ime>Stationary Bike</ime>
+    <misicnaSkupina>kardio</misicnaSkupina>
+    <url>https://www.strengthlog.com/stationary-bike/</url>
+    <opis>The main muscles worked in a stationary bike workout are your heart and lower body muscles:</opis>
+    <primarneMisice />
+    <sekundarneMisice />
+    <koraki />
+    <datumPridobitve>2026-10-26</datumPridobitve>
+  </vaja>
+</vajeSplet>
