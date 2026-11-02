@@ -1,0 +1,92 @@
+CHARSET="ANSI";
+AXIS-VERSION="2010";
+CODEPAGE="windows-1250";
+LANGUAGE="sl";
+LANGUAGES="sl","en";
+CREATION-DATE="20230328 10:30";
+DECIMALS=0;
+MATRIX="0887602S";
+SUBJECT-CODE="08876";
+SUBJECT-AREA="Kakovost življenja - Quality of Life";
+SUBJECT-AREA[en]="Quality of Life";
+COPYRIGHT=YES;
+DESCRIPTION="Delež oseb (%) po pogostosti ukvarjanja s športno ali rekreativno telesno aktivnostjo, statistiène regije, Slovenija, veèletno";
+DESCRIPTION[en]="Share of persons (%) by frequency of physical activity outside working time, statistical regions, Slovenia, multiannually";
+TITLE="Delež oseb (%) po pogostosti ukvarjanja s telesno aktivnostjo po: LETO, STATISTIÈNA REGIJA, POGOSTOST";
+TITLE[en]="Share of persons by physical activity by YEAR, STATISTICAL REGION and FREQUENCY";
+CONTENTS="Delež oseb (%) po pogostosti ukvarjanja s telesno aktivnostjo";
+CONTENTS[en]="Share of persons by physical activity";
+UNITS="%";
+UNITS[en]="%";
+STUB="LETO","STATISTIÈNA REGIJA";
+STUB[en]="YEAR","STATISTICAL REGION";
+HEADING="POGOSTOST";
+HEADING[en]="FREQUENCY";
+VALUES("LETO")="2022","2025";
+VALUES[en]("YEAR")="2022","2025";
+VALUES("STATISTIÈNA REGIJA")="SLOVENIJA","Pomurska","Podravska","Koroška","Savinjska","Zasavska",
+"Posavska","Jugovzhodna Slovenija","Osrednjeslovenska","Gorenjska","Primorsko-notranjska","Goriška",
+"Obalno-kraška";
+VALUES[en]("STATISTICAL REGION")="SLOVENIA","Pomurska","Podravska","Koroška","Savinjska","Zasavska",
+"Posavska","Jugovzhodna Slovenija","Osrednjeslovenska","Gorenjska","Primorsko-notranjska","Goriška",
+"Obalno-kraška";
+VALUES("POGOSTOST")="Dvakrat ali veèkrat na dan","Enkrat na dan","4 do 6-krat na teden",
+"1 do 3-krat na teden","Manj kot enkrat na teden","Nikoli";
+VALUES[en]("FREQUENCY")="Twice or more a day","Once a day","4 to 6 times a week",
+"1 to 3 times a week","Less than once a week","Never";
+CODES("LETO")="2022","2025";
+CODES[en]("YEAR")="2022","2025";
+CODES("STATISTIÈNA REGIJA")="0","01","02","03","04","05","06","07","08","09","10","11","12";
+CODES[en]("STATISTICAL REGION")="0","01","02","03","04","05","06","07","08","09","10","11","12";
+CODES("POGOSTOST")="1","2","3","4","5","6";
+CODES[en]("FREQUENCY")="1","2","3","4","5","6";
+LAST-UPDATED="20260416 10:30";
+CONTACT="Statistièni urad RS, T: (01) 241 64 04, E: gp.surs@gov.si";
+CONTACT[en]="Statistical Office of the Republic of Slovenia, T: +386 1 241 64 04, E: gp.surs@gov.si";
+DATABASE="SI-STAT";
+DATABASE[en]="SI-STAT";
+SOURCE="Statistièni urad Republike Slovenije";
+SOURCE[en]="Statistical Office of the Republic of Slovenia";
+NOTEX("LETO")="Rezultati statistiènega raziskovanja SILC izhajajo iz ankete, izvedene v zaèetku posameznega leta, in iz registrov ter administrativnih virov, ki se veèinoma nanašajo na leto pred izvedbo ankete.";
+NOTEX[en]("YEAR")="The results of SILC are based on a survey conducted in the beginning of the year and on register and administrative data mostly referring to one year before survey is conducted.";
+NOTEX("POGOSTOST")="Podatki se nanašajo na osebe, stare 16 ali veè let.#Nekateri seštevki se zaradi zaokroževanja ne ujemajo.";
+NOTEX[en]("FREQUENCY")="The data refer to persons aged 16 and over.#Some totals do not add up due to rounding.";
+NOTE="Povezane vsebine:#- <A class=seznam HREF=http://www.stat.si/StatWeb/Common/PrikaziDokument.ashx?IdDatoteke=8291 target=_blank>Metodološka pojasnila</A>";
+NOTE[en]="Linked content:#- <A class=seznam HREF= http://www.stat.si/StatWeb/Common/PrikaziDokument.ashx?IdDatoteke=8108 target=_blank>Methodological explanations</A>";
+DATASYMBOL1="N";
+DATASYMBOL1[en]="N";
+DATASYMBOL2="-";
+DATASYMBOL2[en]="-";
+DATASYMBOL4="z";
+DATASYMBOL4[en]="z";
+DATANOTECELL("2022","10","3")=" M";
+DATANOTECELL[en]("2022","10","3")=" M";
+DATANOTECELL("2022","10","4")=" M";
+DATANOTECELL[en]("2022","10","4")=" M";
+DATA=
+8 30 17 28 6 12 
+7 21 17 31 11 12 
+7 28 17 29 5 13 
+9 44 11 18 8 10 
+5 30 15 29 6 16 
+11 32 17 22 6 12 
+7 36 18 22 6 12 
+8 28 14 29 7 14 
+7 29 19 30 5 10 
+13 36 14 28 3 6 
+2 34 24 28 3 9 
+6 36 19 24 6 10 
+4 29 16 27 6 19 
+8 27 19 27 6 13 
+5 21 20 32 7 15 
+7 26 20 28 7 12 
+13 36 16 19 7 9 
+5 23 16 29 7 20 
+8 28 16 29 3 16 
+9 29 11 28 4 18 
+9 23 16 28 6 18 
+10 29 19 26 5 11 
+10 31 25 24 4 6 
+4 22 18 34 4 18 
+7 23 19 28 8 15 
+7 30 22 26 5 10; 

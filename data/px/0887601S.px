@@ -1,0 +1,109 @@
+CHARSET="ANSI";
+AXIS-VERSION="2013";
+CODEPAGE="windows-1250";
+LANGUAGE="sl";
+LANGUAGES="sl","en";
+CREATION-DATE="20230328 10:30";
+DECIMALS=0;
+MATRIX="0887601S";
+SUBJECT-CODE="53";
+SUBJECT-AREA="Kakovost življenja - Quality of Life";
+SUBJECT-AREA[en]="Quality of Life";
+COPYRIGHT=YES;
+DESCRIPTION="Delež oseb (%) po pogostosti ukvarjanja s športno ali rekreativno telesno aktivnostjo, starostnih skupinah in spolu, Slovenija, veèletno";
+DESCRIPTION[en]="Share of persons (%) by frequency of physical activity (excluding working), age groups and gender, Slovenia, multiannually";
+TITLE="Delež oseb (%) po: LETO, SPOL, STAROSTNA SKUPINA, POGOSTOST UKVARJANJA S ŠPORTNO ALI REKREATIVNO TELESNO AKTIVNOSTJO";
+TITLE[en]="Share of persons (%) by YEAR, GENDER, AGE GROUP and FREQUENCY OF PHYSICAL ACTIVITY (EXCLUDING WORKING)";
+CONTENTS="Delež oseb (%)";
+CONTENTS[en]="Share of persons (%)";
+UNITS="%";
+UNITS[en]="%";
+STUB="LETO","SPOL","STAROSTNA SKUPINA";
+STUB[en]="YEAR","GENDER","AGE GROUP";
+HEADING="POGOSTOST UKVARJANJA S ŠPORTNO ALI REKREATIVNO TELESNO AKTIVNOSTJO";
+HEADING[en]="FREQUENCY OF PHYSICAL ACTIVITY (EXCLUDING WORKING)";
+VALUES("LETO")="2022","2025";
+VALUES[en]("YEAR")="2022","2025";
+VALUES("SPOL")="Spol - SKUPAJ","Moški","Ženske";
+VALUES[en]("GENDER")="Gender - TOTAL","Men","Women";
+VALUES("STAROSTNA SKUPINA")="Starostna skupina - SKUPAJ","16-24 let","25-34 let","35-44 let",
+"45-54 let","55-64 let","65 let ali veè";
+VALUES[en]("AGE GROUP")="Age group - TOTAL","16-24 years","25-34 years","35-44 years","45-54 years",
+"55-64 years","65 or more years";
+VALUES("POGOSTOST UKVARJANJA S ŠPORTNO ALI REKREATIVNO TELESNO AKTIVNOSTJO")=
+"Dvakrat ali veèkrat na dan","Enkrat na dan","4 do 6-krat na teden","1 do 3-krat na teden",
+"Manj kot enkrat na teden","Nikoli";
+VALUES[en]("FREQUENCY OF PHYSICAL ACTIVITY (EXCLUDING WORKING)")="Twice or more a day","Once a day",
+"4 to 6 times a week","1 to 3 times a week","Less than once a week","Never";
+CODES("LETO")="2022","2025";
+CODES[en]("YEAR")="2022","2025";
+CODES("SPOL")="TOT","1","2";
+CODES[en]("GENDER")="TOT","1","2";
+CODES("STAROSTNA SKUPINA")="TOT","1","2","3","4","5","6";
+CODES[en]("AGE GROUP")="TOT","1","2","3","4","5","6";
+CODES("POGOSTOST UKVARJANJA S ŠPORTNO ALI REKREATIVNO TELESNO AKTIVNOSTJO")="1","2","3","4","5","6";
+CODES[en]("FREQUENCY OF PHYSICAL ACTIVITY (EXCLUDING WORKING)")="1","2","3","4","5","6";
+LAST-UPDATED="20260416 10:30";
+CONTACT="Statistièni urad RS, T: (01) 241 64 04, E: gp.surs@gov.si";
+CONTACT[en]="Statistical Office of the Republic of Slovenia, T: +386 1 241 64 04, E: gp.surs@gov.si";
+DATABASE="SI-STAT";
+DATABASE[en]="SI-STAT";
+SOURCE="Statistièni urad Republike Slovenije";
+SOURCE[en]="Statistical Office of the Republic of Slovenia";
+NOTEX("LETO")="Rezultati statistiènega raziskovanja SILC izhajajo iz ankete, izvedene v zaèetku posameznega leta, in iz registrov ter administrativnih virov, ki se veèinoma nanašajo na leto pred izvedbo ankete.";
+NOTEX[en]("YEAR")="The results of SILC are based on a survey conducted in the beginning of the year and on register and administrative data mostly referring to one year before survey is conducted.";
+NOTEX("STAROSTNA SKUPINA")="Podatki se nanašajo na osebe, stare 16 ali veè let.";
+NOTEX[en]("AGE GROUP")="The data refer to persons aged 16 and over.";
+NOTEX("POGOSTOST UKVARJANJA S ŠPORTNO ALI REKREATIVNO TELESNO AKTIVNOSTJO")="Nekateri seštevki se zaradi zaokroževanja ne ujemajo.";
+NOTEX[en]("FREQUENCY OF PHYSICAL ACTIVITY (EXCLUDING WORKING)")="Some totals do not add up due to rounding.";
+NOTE="Povezane vsebine:#- <A class=seznam HREF=https://www.stat.si/statweb/File/DocSysFile/8291 target=_blank>Metodološka pojasnila</A>";
+NOTE[en]="Linked content:#- <A class=seznam HREF= https://www.stat.si/statweb/File/DocSysFile/8108 target=_blank>Methodological explanations</A>";
+DATASYMBOL1="N";
+DATASYMBOL1[en]="N";
+DATASYMBOL2="-";
+DATASYMBOL2[en]="-";
+DATASYMBOL4="z";
+DATASYMBOL4[en]="z";
+DATA=
+8 30 17 28 6 12 
+8 28 25 27 3 8 
+8 28 20 30 5 9 
+6 25 17 37 6 8 
+6 26 17 34 7 10 
+8 33 14 26 7 12 
+9 38 13 18 5 18 
+7 29 16 30 6 12 
+9 32 23 23 4 8 
+7 26 18 31 5 12 
+5 23 17 39 6 10 
+4 24 17 36 7 12 
+9 32 13 26 7 13 
+9 36 13 21 5 16 
+8 32 17 27 5 11 
+7 25 28 32 1 7 
+9 31 21 28 6 5 
+7 28 17 35 6 6 
+8 28 18 32 6 8 
+8 34 15 26 6 11 
+9 39 12 16 5 19 
+8 27 19 27 6 13 
+11 22 26 31 4 6 
+8 23 22 29 7 10 
+7 19 22 36 5 12 
+6 26 19 32 6 12 
+9 29 18 25 6 13 
+9 37 14 16 6 19 
+8 25 19 27 7 14 
+13 22 26 29 5 6 
+8 19 23 33 7 10 
+6 17 22 34 7 14 
+5 24 20 31 6 14 
+9 27 15 24 9 16 
+11 35 14 15 6 18 
+8 30 19 27 5 12 
+9 22 26 34 3 6 
+9 28 21 26 6 10 
+9 21 21 37 3 9 
+6 28 18 33 6 9 
+10 31 20 26 4 10 
+7 38 13 17 5 19; 

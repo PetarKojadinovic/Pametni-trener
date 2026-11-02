@@ -1,0 +1,137 @@
+CHARSET="ANSI";
+AXIS-VERSION="2013";
+CODEPAGE="windows-1250";
+LANGUAGE="sl";
+LANGUAGES="sl","en";
+CREATION-DATE="20260410 10:30";
+DECIMALS=0;
+MATRIX="0889308S";
+SUBJECT-CODE="53";
+SUBJECT-AREA="Kakovost življenja - Quality of Life";
+SUBJECT-AREA[en]="Quality of Life";
+COPYRIGHT=YES;
+DESCRIPTION="Delež oseb (%) po indeksu telesne mase (ITM), kohezijski in statistiène regije, Slovenija, veèletno";
+DESCRIPTION[en]="Share of persons (%) by body mass index (BMI), cohesion and statistical regions, Slovenia, multiannually";
+TITLE="Delež oseb (%) po: KATEGORIJE INDEKSA TELESNE MASE (ITM), KOHEZIJSKA IN STATISTIÈNA REGIJA, LETO";
+TITLE[en]="Share of persons (%) by CATEGORIES OF BODY MASS INDEX (BMI), COHESION AND STATISTICAL REGION and YEAR";
+CONTENTS="Delež oseb (%)";
+CONTENTS[en]="Share of persons (%)";
+UNITS="%";
+UNITS[en]="%";
+STUB="KATEGORIJE INDEKSA TELESNE MASE (ITM)","KOHEZIJSKA IN STATISTIÈNA REGIJA";
+STUB[en]="CATEGORIES OF BODY MASS INDEX (BMI)","COHESION AND STATISTICAL REGION";
+HEADING="LETO";
+HEADING[en]="YEAR";
+VALUES("KATEGORIJE INDEKSA TELESNE MASE (ITM)")="Podhranjenost","Normalna hranjenost",
+"Èezmerna hranjenost","Debelost";
+VALUES[en]("CATEGORIES OF BODY MASS INDEX (BMI)")="Underfed","Normally fed","Overfed","Obese";
+VALUES("KOHEZIJSKA IN STATISTIÈNA REGIJA")="SLOVENIJA","Vzhodna Slovenija","Pomurska","Podravska",
+"Koroška","Savinjska","Zasavska","Posavska","Jugovzhodna Slovenija","Primorsko-notranjska",
+"Zahodna Slovenija","Osrednjeslovenska","Gorenjska","Goriška","Obalno-kraška";
+VALUES[en]("COHESION AND STATISTICAL REGION")="SLOVENIA","Vzhodna Slovenija","Pomurska","Podravska",
+"Koroška","Savinjska","Zasavska","Posavska","Jugovzhodna Slovenija","Primorsko-notranjska",
+"Zahodna Slovenija","Osrednjeslovenska","Gorenjska","Goriška","Obalno-kraška";
+VALUES("LETO")="2017","2022","2025";
+VALUES[en]("YEAR")="2017","2022","2025";
+CODES("KATEGORIJE INDEKSA TELESNE MASE (ITM)")="1","2","3","4";
+CODES[en]("CATEGORIES OF BODY MASS INDEX (BMI)")="1","2","3","4";
+CODES("KOHEZIJSKA IN STATISTIÈNA REGIJA")="0","1","01","02","03","04","05","06","07","10","2","08",
+"09","11","12";
+CODES[en]("COHESION AND STATISTICAL REGION")="0","1","01","02","03","04","05","06","07","10","2",
+"08","09","11","12";
+CODES("LETO")="2017","2022","2025";
+CODES[en]("YEAR")="2017","2022","2025";
+LAST-UPDATED="20260416 10:30";
+CONTACT="Statistièni urad RS, T: (01) 241 64 04, E: gp.surs@gov.si";
+CONTACT[en]="Statistical Office of the Republic of Slovenia, T: +386 1 241 64 04, E: gp.surs@gov.si";
+DATABASE="SI-STAT";
+DATABASE[en]="SI-STAT";
+SOURCE="Statistièni urad Republike Slovenije";
+SOURCE[en]="Statistical Office of the Republic of Slovenia";
+NOTEX="Indeks telesne mase (ITM) je podatek, ki upošteva razmerje med telesno težo posameznika v kilogramih in kvadratom telesne višine posameznika v metrih. Prikazani so deleži oseb, ki spadaj v naslednje 4 skupine ITM: podhranjeni (ITM 18,49 ali manj), "
+"normalno hranjeni (ITM 18,50 do 24,99) èezmerno hranjeni (ITM 25,00 do 29,99), debeli (ITM 30 ali veè).";
+NOTEX[en]="Body Mass Index (BMI) is calculated. BMI is an indicator that reflects the ratio between an individual’s body weight in kilograms and the square of their height in metres. The shares of persons are presented according to the following four BMI "
+"categories: underfed (BMI 18.49 or less), normally fed (BMI 18.50 to 24.99), overfed (BMI 25.00 to 29.99), obese (BMI 30 or more).";
+NOTEX("KATEGORIJE INDEKSA TELESNE MASE (ITM)")="Podatki se nanašajo na osebe, stare 16 let ali veè.#Nekateri seštevki se zaradi zaokroževanja ne ujemajo.#";
+NOTEX[en]("CATEGORIES OF BODY MASS INDEX (BMI)")="The data refer to persons aged 16 and over.#Some totals do not add up due to rounding.#";
+NOTEX("LETO")="Rezultati statistiènega raziskovanja SILC izhajajo iz ankete, izvedene v zaèetku posameznega leta, in iz registrov ter administrativnih virov, ki se veèinoma nanašajo na leto pred izvedbo ankete.";
+NOTEX[en]("YEAR")="The results of SILC are based on a survey conducted in the beginning of the year and on register and administrative data mostly referring to one year before survey is conducted.";
+NOTE="Povezane vsebine:#- <A class=seznam HREF=https://www.stat.si/StatWeb/File/DocSysFile/8291 target=_blank>Metodološka pojasnila</A>";
+NOTE[en]="Linked content:#- <A class=seznam HREF=https://www.stat.si/StatWeb/File/DocSysFile/8108 target=_blank>Methodological explanations</A>";
+NOTE("KOHEZIJSKA IN STATISTIÈNA REGIJA")="Podatki so teritorialno razvršèeni po Klasifikaciji statistiènih teritorialnih enot v Evropski uniji (The Classification  of Territorial Units for Statistics) – NUTS (<A class='seznam' HREF=https://www.stat.si/"
+"StatWeb/Methods/Classifications TARGET=_blank>opis in pojasnila</A>).#Raven NUTS 2: Podatki o spremembah posameznih kohezijskih regij so dostopni na <A class=seznam HREF=https://www.stat.si/StatWeb/File/DocSysFile/9428/ TARGET=_blank>povezavi</A>.#Raven "
+"NUTS 3: Podatki o spremembah posameznih statistiènih regij so dostopni na <A class=seznam HREF=https://www.stat.si/StatWeb/File/DocSysFile/9430/ TARGET=_blank>povezavi</A>.";
+NOTE[en]("COHESION AND STATISTICAL REGION")="Data are territorially classsified according to The Classification of Territorial Units for Statistics – NUTS, (<A class='seznam' HREF=https://www.stat.si/StatWeb/en/Methods/Classifications TARGET=_"
+"blank>description and explanations</A>).#Level NUTS 2: Data on changes of individual cohesion regions are available at the <A class=seznam HREF=https://www.stat.si/StatWeb/File/DocSysFile/9429/ TARGET=_blank>link</A>.#Level NUTS 3: Data on changes of "
+"individual statistical regions are available at the <A class=seznam HREF=https://www.stat.si/StatWeb/File/DocSysFile/9431/ TARGET=_blank>link</A>.";
+DATASYMBOL1="N";
+DATASYMBOL1[en]="N";
+DATASYMBOL2="-";
+DATASYMBOL2[en]="-";
+DATASYMBOL4="z";
+DATASYMBOL4[en]="z";
+DATANOTECELL("2","10","2022")=" M";
+DATANOTECELL[en]("2","10","2022")=" M";
+DATANOTECELL("3","10","2022")=" M";
+DATANOTECELL[en]("3","10","2022")=" M";
+DATA=
+3 2 2 
+3 1 1 
+3 1 1 
+3 1 2 
+3 4 1 
+2 1 1 
+1 3 1 
+3 0 0 
+4 2 1 
+2 0 1 
+3 2 2 
+3 3 2 
+2 1 1 
+5 3 2 
+2 1 1 
+45 44 42 
+43 40 38 
+40 36 36 
+43 40 43 
+49 42 34 
+41 43 37 
+39 41 38 
+46 36 33 
+42 36 39 
+47 42 41 
+48 47 45 
+50 48 46 
+48 46 39 
+45 47 47 
+39 45 53 
+36 37 38 
+37 39 39 
+39 39 42 
+37 39 35 
+37 34 42 
+38 38 41 
+37 36 40 
+37 39 42 
+37 44 39 
+35 46 38 
+34 36 37 
+33 35 36 
+34 38 45 
+39 36 35 
+41 36 32 
+16 17 19 
+17 20 21 
+18 24 21 
+17 20 20 
+11 21 22 
+18 18 21 
+23 19 22 
+15 24 25 
+18 18 21 
+17 12 19 
+15 15 16 
+14 15 17 
+16 16 15 
+12 14 17 
+18 17 14; 

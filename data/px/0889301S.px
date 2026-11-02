@@ -1,0 +1,75 @@
+CHARSET="ANSI";
+AXIS-VERSION="2013";
+CODEPAGE="windows-1250";
+LANGUAGE="sl";
+LANGUAGES="sl","en";
+CREATION-DATE="20260410 10:30";
+DECIMALS=1;
+SHOWDECIMALS=1;
+MATRIX="0889301S";
+SUBJECT-CODE="53";
+SUBJECT-AREA="Kakovost življenja - Quality of Life";
+SUBJECT-AREA[en]="Quality of Life";
+COPYRIGHT=YES;
+DESCRIPTION="Povpreèna telesna višina in teža oseb po starostnih skupinah in spolu, Slovenija, veèletno";
+DESCRIPTION[en]="Average body height and weight of persons by age groups and gender, Slovenia, multiannually";
+TITLE="Povpreèna telesna višina (cm), povpreèna telesna teža (kg) po: VIŠINA/TEŽA, STAROSTNA SKUPINA, LETO, SPOL";
+TITLE[en]="Average body height (cm), average body weight (kg) by HEIGHT/WEIGHT, AGE GROUP, YEAR and GENDER";
+CONTENTS="Povpreèna telesna višina (cm), povpreèna telesna teža (kg)";
+CONTENTS[en]="Average body height (cm), average body weight (kg)";
+UNITS="cm, kg";
+UNITS[en]="cm, kg";
+STUB="VIŠINA/TEŽA","STAROSTNA SKUPINA";
+STUB[en]="HEIGHT/WEIGHT","AGE GROUP";
+HEADING="LETO","SPOL";
+HEADING[en]="YEAR","GENDER";
+VALUES("VIŠINA/TEŽA")="Povpreèna telesna višina","Povpreèna telesna teža";
+VALUES[en]("HEIGHT/WEIGHT")="Average body height","Average body weight";
+VALUES("STAROSTNA SKUPINA")="Starostna skupina - SKUPAJ","16-24 let","25-34 let","35-44 let",
+"45-54 let","55-64 let","65 let ali veè";
+VALUES[en]("AGE GROUP")="Age group - TOTAL","16-24 years","25-34 years","35-44 years","45-54 years",
+"55-64 years","65 or more years";
+VALUES("LETO")="2017","2022","2025";
+VALUES[en]("YEAR")="2017","2022","2025";
+VALUES("SPOL")="Spol - SKUPAJ","Moški","Ženske";
+VALUES[en]("GENDER")="Gender - TOTAL","Men","Women";
+CODES("VIŠINA/TEŽA")="1","2";
+CODES[en]("HEIGHT/WEIGHT")="1","2";
+CODES("STAROSTNA SKUPINA")="0","1","2","3","4","5","6";
+CODES[en]("AGE GROUP")="0","1","2","3","4","5","6";
+CODES("LETO")="2017","2022","2025";
+CODES[en]("YEAR")="2017","2022","2025";
+CODES("SPOL")="0","1","2";
+CODES[en]("GENDER")="0","1","2";
+LAST-UPDATED="20260416 10:30";
+CONTACT="Statistièni urad RS, T: (01) 241 64 04, E: gp.surs@gov.si";
+CONTACT[en]="Statistical Office of the Republic of Slovenia, T: +386 1 241 64 04, E: gp.surs@gov.si";
+DATABASE="SI-STAT";
+DATABASE[en]="SI-STAT";
+SOURCE="Statistièni urad Republike Slovenije";
+SOURCE[en]="Statistical Office of the Republic of Slovenia";
+NOTEX("LETO")="Rezultati statistiènega raziskovanja SILC izhajajo iz ankete, izvedene v zaèetku posameznega leta, in iz registrov ter administrativnih virov, ki se veèinoma nanašajo na leto pred izvedbo ankete.";
+NOTEX[en]("YEAR")="The results of SILC are based on a survey conducted in the beginning of the year and on register and administrative data mostly referring to one year before survey is conducted.";
+NOTE="Povezane vsebine:#- <A class=seznam HREF=https://www.stat.si/StatWeb/File/DocSysFile/8291 target=_blank>Metodološka pojasnila</A>";
+NOTE[en]="Linked content:#- <A class=seznam HREF=https://www.stat.si/StatWeb/File/DocSysFile/8108 target=_blank>Methodological explanations</A>";
+DATASYMBOL1="N";
+DATASYMBOL1[en]="N";
+DATASYMBOL2="-";
+DATASYMBOL2[en]="-";
+DATASYMBOL4="z";
+DATASYMBOL4[en]="z";
+DATA=
+171.4 178.1 165 172 178.5 165.4 171.9 178.4 165.3 
+174.4 181.5 166.7 173.9 180.5 166.8 174.6 181.5 167.4 
+173.6 180.1 166.8 174.3 180.3 167.3 174.2 180.3 167.2 
+173.3 179.3 166.7 174 180 167.1 174 179.8 166.9 
+171.7 177.8 165.7 172.7 178.8 166.5 172.9 179 166.6 
+170.2 176.5 163.8 171.4 177.9 164.8 171.3 177.5 165 
+167.4 174.5 162.1 168 174.9 162.6 168 174.8 162.5 
+76.2 84.7 67.9 77.2 85.7 68.7 77.7 85.9 69.4 
+70.5 79.2 60.9 71.7 80.2 62.5 71 79.6 61.9 
+74 82.7 64.7 75.3 82.8 66.6 76.8 84.6 67.8 
+76.6 85.7 66.6 77.9 87.2 67.1 79 87.7 68.4 
+78.5 87.9 69.3 79.3 88.3 70.1 79.5 87.8 71 
+79.7 87.4 71.9 80.4 88.8 72 80.6 89 72 
+75.7 83.2 70.2 76.4 84.6 70 76.7 84.2 70.6; 

@@ -1,0 +1,95 @@
+CHARSET="ANSI";
+AXIS-VERSION="2013";
+CODEPAGE="windows-1250";
+LANGUAGE="sl";
+LANGUAGES="sl","en";
+CREATION-DATE="20260410 10:30";
+DECIMALS=0;
+MATRIX="0889302S";
+SUBJECT-CODE="53";
+SUBJECT-AREA="Kakovost življenja - Quality of Life";
+SUBJECT-AREA[en]="Quality of Life";
+COPYRIGHT=YES;
+DESCRIPTION="Delež oseb (%) po indeksu telesne mase (ITM), starostnih skupinah in spolu, Slovenija, veèletno";
+DESCRIPTION[en]="Share of persons (%) by body mass index (BMI), age groups and gender, Slovenia, multiannually";
+TITLE="Delež oseb (%) po: KATEGORIJE INDEKSA TELESNE MASE (ITM), STAROSTNA SKUPINA, LETO, SPOL";
+TITLE[en]="Share of persons (%) by CATEGORIES OF BODY MASS INDEX (BMI), AGE GROUP, YEAR and GENDER";
+CONTENTS="Delež oseb (%)";
+CONTENTS[en]="Share of persons (%)";
+UNITS="%";
+UNITS[en]="%";
+STUB="KATEGORIJE INDEKSA TELESNE MASE (ITM)","STAROSTNA SKUPINA";
+STUB[en]="CATEGORIES OF BODY MASS INDEX (BMI)","AGE GROUP";
+HEADING="LETO","SPOL";
+HEADING[en]="YEAR","GENDER";
+VALUES("KATEGORIJE INDEKSA TELESNE MASE (ITM)")="Podhranjenost","Normalna hranjenost",
+"Èezmerna hranjenost","Debelost";
+VALUES[en]("CATEGORIES OF BODY MASS INDEX (BMI)")="Underfed","Normally fed","Overfed","Obese";
+VALUES("STAROSTNA SKUPINA")="Starostna skupina - SKUPAJ","16-24 let","25-34 let","35-44 let",
+"45-54 let","55-64 let","65 let ali veè";
+VALUES[en]("AGE GROUP")="Age group - TOTAL","16-24 years","25-34 years","35-44 years","45-54 years",
+"55-64 years","65 or more years";
+VALUES("LETO")="2017","2022","2025";
+VALUES[en]("YEAR")="2017","2022","2025";
+VALUES("SPOL")="Spol - SKUPAJ","Moški","Ženske";
+VALUES[en]("GENDER")="Gender - TOTAL","Men","Women";
+CODES("KATEGORIJE INDEKSA TELESNE MASE (ITM)")="1","2","3","4";
+CODES[en]("CATEGORIES OF BODY MASS INDEX (BMI)")="1","2","3","4";
+CODES("STAROSTNA SKUPINA")="0","1","2","3","4","5","6";
+CODES[en]("AGE GROUP")="0","1","2","3","4","5","6";
+CODES("LETO")="2017","2022","2025";
+CODES[en]("YEAR")="2017","2022","2025";
+CODES("SPOL")="0","1","2";
+CODES[en]("GENDER")="0","1","2";
+LAST-UPDATED="20260416 10:30";
+CONTACT="Statistièni urad RS, T: (01) 241 64 04, E: gp.surs@gov.si";
+CONTACT[en]="Statistical Office of the Republic of Slovenia, T: +386 1 241 64 04, E: gp.surs@gov.si";
+DATABASE="SI-STAT";
+DATABASE[en]="SI-STAT";
+SOURCE="Statistièni urad Republike Slovenije";
+SOURCE[en]="Statistical Office of the Republic of Slovenia";
+NOTEX="Indeks telesne mase (ITM) je podatek, ki upošteva razmerje med telesno težo posameznika v kilogramih in kvadratom telesne višine posameznika v metrih. Prikazani so deleži oseb, ki spadaj v naslednje 4 skupine ITM: podhranjeni (ITM 18,49 ali manj), "
+"normalno hranjeni (ITM 18,50 do 24,99) èezmerno hranjeni (ITM 25,00 do 29,99), debeli (ITM 30 ali veè).";
+NOTEX[en]="Body Mass Index (BMI) is calculated. BMI is an indicator that reflects the ratio between an individual’s body weight in kilograms and the square of their height in metres. The shares of persons are presented according to the following four BMI "
+"categories: underfed (BMI 18.49 or less), normally fed (BMI 18.50 to 24.99), overfed (BMI 25.00 to 29.99), obese (BMI 30 or more).";
+NOTEX("KATEGORIJE INDEKSA TELESNE MASE (ITM)")="Podatki se nanašajo na osebe, stare 16 let ali veè.#Nekateri seštevki se zaradi zaokroževanja ne ujemajo.#";
+NOTEX[en]("CATEGORIES OF BODY MASS INDEX (BMI)")="The data refer to persons aged 16 and over.#Some totals do not add up due to rounding.##";
+NOTEX("LETO")="Rezultati statistiènega raziskovanja SILC izhajajo iz ankete, izvedene v zaèetku posameznega leta, in iz registrov ter administrativnih virov, ki se veèinoma nanašajo na leto pred izvedbo ankete.";
+NOTEX[en]("YEAR")="The results of SILC are based on a survey conducted in the beginning of the year and on register and administrative data mostly referring to one year before survey is conducted.";
+NOTE="Povezane vsebine:#- <A class=seznam HREF=https://www.stat.si/StatWeb/File/DocSysFile/8291 target=_blank>Metodološka pojasnila</A>";
+NOTE[en]="Linked content:#- <A class=seznam HREF=https://www.stat.si/StatWeb/File/DocSysFile/8108 target=_blank>Methodological explanations</A>";
+DATASYMBOL1="N";
+DATASYMBOL1[en]="N";
+DATASYMBOL2="-";
+DATASYMBOL2[en]="-";
+DATASYMBOL4="z";
+DATASYMBOL4[en]="z";
+DATA=
+3 1 4 2 0 3 2 1 2 
+10 5 16 8 2 14 5 3 8 
+4 1 7 2 0 4 2 2 3 
+2 1 4 1 0 3 1 0 3 
+2 0 3 1 0 2 1 0 2 
+1 1 1 0 1 0 1 0 1 
+1 1 1 1 1 2 1 0 1 
+45 38 52 44 36 51 42 33 50 
+67 65 68 62 62 61 72 66 78 
+57 51 63 60 55 66 53 43 65 
+51 39 65 50 38 63 44 32 57 
+40 26 52 38 25 51 38 27 49 
+32 25 39 32 23 42 32 23 41 
+34 29 38 33 26 39 32 27 36 
+36 42 30 37 42 32 38 45 32 
+19 25 13 24 27 21 17 24 10 
+31 39 24 28 33 22 33 42 22 
+34 43 23 35 42 26 39 47 30 
+40 48 31 44 53 35 40 49 31 
+41 45 37 42 45 39 43 47 38 
+43 47 40 43 48 39 44 48 41 
+16 19 13 17 21 13 19 21 16 
+4 5 2 6 9 4 6 8 4 
+8 9 6 10 12 8 12 14 11 
+12 16 8 15 20 8 16 20 10 
+19 25 13 17 23 12 21 24 18 
+26 29 23 25 32 19 25 30 21 
+22 23 21 23 26 20 23 24 22; 

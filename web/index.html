@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pametni trener – telesna dejavnost v Sloveniji</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root { --bg:#f5f6f8; --kartica:#fff; --besedilo:#1d2330; --sivo:#6b7280; --rob:#e3e6eb; --poudarek:#2563eb; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--besedilo); }
+  header { padding:24px 16px 8px; max-width:1200px; margin:auto; }
+  h1 { margin:0 0 4px; font-size:1.5rem; }
+  header p { margin:0; color:var(--sivo); }
+  main { max-width:1200px; margin:auto; padding:8px 16px 32px; display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(min(100%,520px),1fr)); }
+  .kartica { background:var(--kartica); border:1px solid var(--rob); border-radius:10px; padding:16px; min-width:0; }
+  .siroka { grid-column:1/-1; }
+  h2 { font-size:1.05rem; margin:0 0 4px; }
+  .opis { color:var(--sivo); font-size:.875rem; margin:0 0 12px; }
+  .filtri { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; }
+  select, button { font:inherit; padding:6px 10px; border:1px solid var(--rob); border-radius:6px; background:#fff; }
+  button { background:var(--poudarek); color:#fff; border-color:var(--poudarek); cursor:pointer; }
+  .graf { position:relative; height:320px; }
+  .kazalniki { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; }
+  .kazalnik { background:var(--kartica); border:1px solid var(--rob); border-radius:10px; padding:12px 16px; }
+  .kazalnik b { display:block; font-size:1.6rem; }
+  .kazalnik span { color:var(--sivo); font-size:.85rem; }
+  #stanje { color:var(--sivo); font-size:.875rem; margin-top:8px; }
+  #stanje.napaka { color:#b91c1c; }
+  table { width:100%; border-collapse:collapse; font-size:.85rem; }
+  td, th { text-align:left; padding:6px 4px; border-bottom:1px solid var(--rob); vertical-align:top; }
+  a { color:var(--poudarek); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Telesna dejavnost in telesna masa v Sloveniji</h1>
+  <p>Podatki SURS (SI-STAT) v obliki PC-Axis, pridobljeni ob vsakem nalaganju strani. Del projekta »Pametni trener«.</p>
+  <div class="filtri" style="margin-top:12px">
+    <button id="osvezi">Osveži podatke</button>
+  </div>
+  <div id="stanje">Nalagam podatke s portala SI-STAT …</div>
+</header>
+
+<main>
+  <section class="siroka kazalniki" id="kazalniki"></section>
+
+  <section class="kartica">
+    <h2>Pogostost športne ali rekreativne aktivnosti po starosti</h2>
+    <p class="opis">Delež oseb (%) po pogostosti vadbe. Tabela 0887601S.</p>
+    <div class="filtri">
+      <select id="akt-leto"></select>
+      <select id="akt-spol"></select>
+    </div>
+    <div class="graf"><canvas id="g-pogostost"></canvas></div>
+  </section>
+
+  <section class="kartica">
+    <h2>Redno aktivni (vsaj 1× na teden): moški in ženske</h2>
+    <p class="opis">Seštevek kategorij od »dvakrat na dan« do »1 do 3-krat na teden«. Črtkano: izbrano leto proti prejšnjemu.</p>
+    <div class="filtri"><select id="redno-leto"></select></div>
+    <div class="graf"><canvas id="g-redno"></canvas></div>
+  </section>
+
+  <section class="kartica siroka">
+    <h2>Regije: telesna aktivnost in prekomerna telesna masa</h2>
+    <p class="opis">Združeni tabeli 0887602S in 0889308S po statistični regiji. Prekomerna masa = čezmerna hranjenost + debelost (ITM ≥ 25).</p>
+    <div class="filtri">
+      <select id="reg-leto"></select>
+      <select id="reg-razvrsti">
+        <option value="redno">Razvrsti po aktivnosti</option>
+        <option value="prekomerno">Razvrsti po prekomerni masi</option>
+        <option value="debelost">Razvrsti po debelosti</option>
+      </select>
+    </div>
+    <div class="graf" style="height:400px"><canvas id="g-regije"></canvas></div>
+  </section>
+
+  <section class="kartica">
+    <h2>Kategorije indeksa telesne mase skozi leta</h2>
+    <p class="opis">Delež oseb (%) po kategorijah ITM. Tabela 0889302S.</p>
+    <div class="filtri">
+      <select id="itm-spol"></select>
+      <select id="itm-starost"></select>
+    </div>
+    <div class="graf"><canvas id="g-itm"></canvas></div>
+  </section>
+
+  <section class="kartica">
+    <h2>Povprečna teža in izračunan ITM po starosti</h2>
+    <p class="opis">ITM izračunan iz povprečne višine in teže (teža / višina²). Tabela 0889301S.</p>
+    <div class="filtri">
+      <select id="telo-leto"></select>
+    </div>
+    <div class="graf"><canvas id="g-telo"></canvas></div>
+  </section>
+
+  <section class="kartica siroka">
+    <h2>Viri</h2>
+    <table id="viri"></table>
+  </section>
+</main>
+
+<script>
+const BARVE = ["#1d4ed8", "#3b82f6", "#60a5fa", "#93c5fd", "#fbbf24", "#ef4444"];
+const BARVE_ITM = { "Podhranjenost": "#93c5fd", "Normalna hranjenost": "#22c55e", "Čezmerna hranjenost": "#f59e0b", "Debelost": "#dc2626" };
+const SPOL_BARVE = { "Moški": "#2563eb", "Ženske": "#db2777" };
+let podatki = null;
+const grafi = {};
+
+const $ = id => document.getElementById(id);
+const kratko = s => s.replace(/^(Starostna skupina|Spol) - /, "").replace("SKUPAJ", "Skupaj");
+
+function napolni(select, moznosti, izbrano) {
+  const prej = select.value;
+  select.innerHTML = moznosti.map(m => `<option value="${m}">${kratko(m)}</option>`).join("");
+  select.value = moznosti.includes(prej) ? prej : (izbrano ?? moznosti[0]);
+}
+
+function narisi(id, nastavitve) {
+  if (grafi[id]) grafi[id].destroy();
+  grafi[id] = new Chart($(id), nastavitve);
+}
+
+const odstotki = { y: { beginAtZero: true, ticks: { callback: v => v + " %" } } };
+
+function grafPogostost() {
+  const a = podatki.aktivnost, leto = $("akt-leto").value, spol = $("akt-spol").value;
+  const vrstice = a.podatki[leto][spol];
+  narisi("g-pogostost", {
+    type: "bar",
+    data: {
+      labels: a.starosti.map(kratko),
+      datasets: a.pogostosti.map((p, i) => ({
+        label: p, backgroundColor: BARVE[i],
+        data: a.starosti.map(s => vrstice[s].porazdelitev[p]),
+      })),
+    },
+    options: { maintainAspectRatio: false, scales: { x: { stacked: true }, y: { stacked: true, max: 100, ticks: { callback: v => v + " %" } } },
+               plugins: { legend: { position: "bottom", labels: { boxWidth: 12 } } } },
+  });
+}
+
+function grafRedno() {
+  const a = podatki.aktivnost, leto = $("redno-leto").value;
+  const prejsnje = a.leta[a.leta.indexOf(leto) - 1];
+  const spoli = a.spoli.filter(s => SPOL_BARVE[s]);
+  const nabori = spoli.map(s => ({
+    label: `${s} ${leto}`, borderColor: SPOL_BARVE[s], backgroundColor: SPOL_BARVE[s], tension: .3,
+    data: a.starosti.slice(1).map(st => a.podatki[leto][s][st].redno),
+  }));
+  if (prejsnje) spoli.forEach(s => nabori.push({
+    label: `${s} ${prejsnje}`, borderColor: SPOL_BARVE[s], backgroundColor: SPOL_BARVE[s], borderDash: [5, 5], pointRadius: 2, tension: .3,
+    data: a.starosti.slice(1).map(st => a.podatki[prejsnje][s][st].redno),
+  }));
+  narisi("g-redno", {
+    type: "line",
+    data: { labels: a.starosti.slice(1).map(kratko), datasets: nabori },
+    options: { maintainAspectRatio: false, scales: { y: { min: 50, max: 100, ticks: { callback: v => v + " %" } } },
+               plugins: { legend: { position: "bottom", labels: { boxWidth: 12 } } } },
+  });
+}
+
+function grafRegije() {
+  const r = podatki.regije, leto = $("reg-leto").value, kljuc = $("reg-razvrsti").value;
+  const slo = r.podatki[leto].find(v => v.regija === "SLOVENIJA");
+  const vrstice = r.podatki[leto].filter(v => v !== slo).sort((x, y) => (y[kljuc] ?? -1) - (x[kljuc] ?? -1));
+  const crta = (vrednost, barva) => ({ type: "line", label: "", data: vrstice.map(() => vrednost), borderColor: barva, borderDash: [4, 4], pointRadius: 0, borderWidth: 1 });
+  narisi("g-regije", {
+    type: "bar",
+    data: {
+      labels: vrstice.map(v => v.regija),
+      datasets: [
+        { label: "Redno aktivni (%)", backgroundColor: "#2563eb", data: vrstice.map(v => v.redno) },
+        { label: "Prekomerna masa (%)", backgroundColor: "#f59e0b", data: vrstice.map(v => v.prekomerno) },
+        { label: "Debelost (%)", backgroundColor: "#dc2626", data: vrstice.map(v => v.debelost) },
+        { ...crta(slo.redno, "#2563eb"), label: `Slovenija – aktivni (${slo.redno} %)` },
+        { ...crta(slo.prekomerno, "#f59e0b"), label: `Slovenija – prekomerna masa (${slo.prekomerno} %)` },
+      ],
+    },
+    options: { maintainAspectRatio: false, scales: odstotki, plugins: { legend: { position: "bottom", labels: { boxWidth: 12 } } } },
+  });
+}
+
+function grafItm() {
+  const t = podatki.itm, spol = $("itm-spol").value, starost = $("itm-starost").value;
+  const izbor = t.podatki[spol][starost];
+  narisi("g-itm", {
+    type: "bar",
+    data: {
+      labels: t.leta,
+      datasets: t.kategorije.map(k => ({ label: k, backgroundColor: BARVE_ITM[k], data: t.leta.map(l => izbor[k][l]) })),
+    },
+    options: { maintainAspectRatio: false, scales: { x: { stacked: true }, y: { stacked: true, max: 100, ticks: { callback: v => v + " %" } } },
+               plugins: { legend: { position: "bottom", labels: { boxWidth: 12 } } } },
+  });
+}
+
+function grafTelo() {
+  const t = podatki.telo, leto = $("telo-leto").value;
+  const starosti = t.starosti.slice(1), spoli = t.spoli.filter(s => SPOL_BARVE[s]);
+  narisi("g-telo", {
+    data: {
+      labels: starosti.map(kratko),
+      datasets: [
+        ...spoli.map(s => ({ type: "bar", label: `Teža (kg) – ${s}`, yAxisID: "kg", backgroundColor: SPOL_BARVE[s] + "88",
+                             data: starosti.map(st => t.podatki[leto][s][st].teza) })),
+        ...spoli.map(s => ({ type: "line", label: `ITM – ${s}`, yAxisID: "itm", borderColor: SPOL_BARVE[s], backgroundColor: SPOL_BARVE[s],
+                             data: starosti.map(st => t.podatki[leto][s][st].itm) })),
+      ],
+    },
+    options: { maintainAspectRatio: false,
+      scales: { kg: { position: "left", beginAtZero: true, title: { display: true, text: "kg" } },
+                itm: { position: "right", min: 18, max: 32, grid: { drawOnChartArea: false }, title: { display: true, text: "ITM" } } },
+      plugins: { legend: { position: "bottom", labels: { boxWidth: 12 } } } },
+  });
+}
+
+function kazalniki() {
+  const a = podatki.aktivnost, zadnje = a.leta.at(-1), skupaj = a.podatki[zadnje][a.spoli[0]][a.starosti[0]];
+  const t = podatki.telo, tz = t.leta.at(-1), tSkupaj = t.podatki[tz][t.spoli[0]][t.starosti[0]];
+  const i = podatki.itm, iz = i.podatki[i.spoli[0]][i.starosti[0]], il = i.leta.at(-1), prvo = i.leta[0];
+  const prek = iz["Čezmerna hranjenost"][il] + iz["Debelost"][il];
+  const prekPrej = iz["Čezmerna hranjenost"][prvo] + iz["Debelost"][prvo];
+  const reg = podatki.regije, rl = reg.leta.at(-1);
+  const naj = reg.podatki[rl].filter(v => v.regija !== "SLOVENIJA" && v.redno != null).sort((x, y) => y.redno - x.redno)[0];
+  const k = [
+    [skupaj.redno + " %", `redno aktivnih (vsaj 1× na teden), ${zadnje}`],
+    [skupaj.nikoli + " %", `se nikoli ne ukvarja s športom, ${zadnje}`],
+    [prek + " %", `s prekomerno telesno maso, ${il} (${prek - prekPrej >= 0 ? "+" : ""}${prek - prekPrej} o. t. od ${prvo})`],
+    [tSkupaj.itm, `povprečni ITM (${tSkupaj.teza} kg, ${tSkupaj.visina} cm), ${tz}`],
+    [naj.regija, `najbolj aktivna regija (${naj.redno} %), ${rl}`],
+  ];
+  $("kazalniki").innerHTML = k.map(([v, o]) => `<div class="kazalnik"><b>${v}</b><span>${o}</span></div>`).join("");
+}
+
+function viri() {
+  $("viri").innerHTML = "<tr><th>Tabela</th><th>Naslov</th><th>Posodobljeno</th><th>Vir</th></tr>" +
+    podatki.viri.map(v => `<tr><td><a href="${v.url}" target="_blank" rel="noopener">${v.matrika}</a></td><td>${v.naslov}</td><td>${v.posodobljeno}</td><td>${v.vir}</td></tr>`).join("");
+}
+
+function pripraviFiltre() {
+  const a = podatki.aktivnost;
+  napolni($("akt-leto"), a.leta, a.leta.at(-1));
+  napolni($("akt-spol"), a.spoli);
+  napolni($("redno-leto"), a.leta, a.leta.at(-1));
+  napolni($("reg-leto"), podatki.regije.leta, podatki.regije.leta.at(-1));
+  napolni($("itm-spol"), podatki.itm.spoli);
+  napolni($("itm-starost"), podatki.itm.starosti);
+  napolni($("telo-leto"), podatki.telo.leta, podatki.telo.leta.at(-1));
+}
+
+function narisiVse() {
+  kazalniki(); grafPogostost(); grafRedno(); grafRegije(); grafItm(); grafTelo(); viri();
+}
+
+async function nalozi() {
+  const stanje = $("stanje");
+  stanje.className = ""; stanje.textContent = "Nalagam podatke s portala SI-STAT …";
+  try {
+    const odgovor = await fetch("/api/podatki", { cache: "no-store" });
+    const json = await odgovor.json();
+    if (!odgovor.ok) throw new Error(json.napaka || odgovor.statusText);
+    podatki = json;
+    pripraviFiltre();
+    narisiVse();
+    const kopije = podatki.viri.filter(v => v.vir !== "SI-STAT (sveže)").length;
+    stanje.textContent = `Pridobljeno ${new Date(podatki.pridobljeno).toLocaleString("sl-SI")}` +
+      (kopije ? ` – ${kopije} tabel iz lokalne kopije (SI-STAT ni dosegljiv)` : " – vse tabele sveže s SI-STAT");
+  } catch (e) {
+    stanje.className = "napaka"; stanje.textContent = "Napaka pri nalaganju: " + e.message;
+  }
+}
+
+$("akt-leto").onchange = $("akt-spol").onchange = grafPogostost;
+$("redno-leto").onchange = grafRedno;
+$("reg-leto").onchange = $("reg-razvrsti").onchange = grafRegije;
+$("itm-spol").onchange = $("itm-starost").onchange = grafItm;
+$("telo-leto").onchange = grafTelo;
+$("osvezi").onclick = nalozi;
+nalozi();
+</script>
+</body>
+</html>
