@@ -208,6 +208,35 @@ class Obdelovalec(SimpleHTTPRequestHandler):
         except Exception as napaka:
             telo = json.dumps({"napaka": str(napaka)}, ensure_ascii=False).encode("utf-8")
             status = 502
+        self._poslji_json(telo, status)
+
+    def do_POST(self):
+        """POST /api/nacrt: podatki obrazca -> dinamičen prompt -> Claude -> NacrtVadbe (JSON)."""
+        if self.path.split("?")[0] != "/api/nacrt":
+            self.send_error(404)
+            return
+        try:
+            import llm_nacrt  # potrebuje paket anthropic samo za to funkcijo
+            from pydantic import ValidationError
+
+            dolzina = min(int(self.headers.get("Content-Length", 0)), 10_000)
+            try:
+                vnos = llm_nacrt.VnosUporabnika.model_validate_json(self.rfile.read(dolzina))
+            except ValidationError as napaka:
+                polja = ", ".join(".".join(map(str, e["loc"])) for e in napaka.errors())
+                raise ValueError(f"Neveljaven vnos: {polja}")
+            nacrt = llm_nacrt.pridobi_nacrt(vnos)
+            odgovor = {"nacrt": nacrt.model_dump(), "model": llm_nacrt.MODEL,
+                       "prompt": llm_nacrt.sestavi_prompt(vnos),
+                       "statistika": {"vaj": nacrt.stevilo_vaj(), "iz_baze": nacrt.iz_baze()}}
+            telo, status = json.dumps(odgovor, ensure_ascii=False).encode("utf-8"), 200
+        except ValueError as napaka:
+            telo, status = json.dumps({"napaka": str(napaka)}, ensure_ascii=False).encode("utf-8"), 400
+        except Exception as napaka:  # NapakaLLM, manjkajoč paket ...
+            telo, status = json.dumps({"napaka": str(napaka)}, ensure_ascii=False).encode("utf-8"), 502
+        self._poslji_json(telo, status)
+
+    def _poslji_json(self, telo, status):
         self.send_response(status)
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Cache-Control", "no-store")

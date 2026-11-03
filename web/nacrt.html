@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pametni trener – osebni načrt vadbe</title>
+<style>
+  :root { --bg:#f5f6f8; --kartica:#fff; --besedilo:#1d2330; --sivo:#6b7280; --rob:#e3e6eb; --poudarek:#2563eb; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--besedilo); }
+  header, main { max-width:1100px; margin:auto; padding:16px; }
+  header { padding-top:24px; }
+  h1 { margin:0 0 4px; font-size:1.5rem; }
+  header p { margin:0; color:var(--sivo); }
+  .kartica { background:var(--kartica); border:1px solid var(--rob); border-radius:10px; padding:16px; margin-bottom:16px; min-width:0; }
+  form { display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr)); }
+  label { display:flex; flex-direction:column; gap:4px; font-size:.875rem; color:var(--sivo); }
+  fieldset { border:1px solid var(--rob); border-radius:6px; padding:8px 10px; margin:0; font-size:.875rem; }
+  fieldset label { flex-direction:row; align-items:center; display:inline-flex; margin-right:10px; color:var(--besedilo); }
+  legend { color:var(--sivo); }
+  .siroko { grid-column:1/-1; }
+  input, select, textarea, button { font:inherit; padding:6px 10px; border:1px solid var(--rob); border-radius:6px; background:#fff; color:var(--besedilo); }
+  button { background:var(--poudarek); color:#fff; border-color:var(--poudarek); cursor:pointer; }
+  button:disabled { opacity:.6; cursor:wait; }
+  #stanje { color:var(--sivo); font-size:.875rem; margin-top:8px; }
+  #stanje.napaka { color:#b91c1c; }
+  .dnevi { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr)); }
+  h2 { font-size:1.15rem; margin:0 0 4px; }
+  h3 { font-size:1rem; margin:0 0 2px; text-transform:capitalize; }
+  .opis { color:var(--sivo); font-size:.875rem; margin:0 0 8px; }
+  table { width:100%; border-collapse:collapse; font-size:.85rem; }
+  td, th { text-align:left; padding:6px 4px; border-bottom:1px solid var(--rob); vertical-align:top; }
+  .znacka { font-size:.7rem; background:#dbeafe; color:#1e40af; border-radius:4px; padding:1px 5px; margin-left:4px; }
+  .opozorilo { color:#b45309; }
+  details pre { white-space:pre-wrap; font-size:.8rem; background:var(--bg); padding:8px; border-radius:6px; }
+  a { color:var(--poudarek); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Osebni načrt vadbe</h1>
+  <p>Iz tvojih podatkov in trenutnega časa se sestavi zahteva za Claude API. Model vrne načrt v JSON, ki ga aplikacija prebere v razrede in prikaže. <a href="index.html">← Statistika SURS</a></p>
+</header>
+
+<main>
+  <section class="kartica">
+    <form id="obrazec">
+      <label>Ime (neobvezno)<input name="ime" maxlength="40"></label>
+      <label>Cilj
+        <select name="cilj">
+          <option>splošna kondicija</option><option>moč</option><option>mišična masa</option>
+          <option>hujšanje</option><option>vzdržljivost</option>
+        </select>
+      </label>
+      <label>Izkušnje
+        <select name="raven"><option>začetnik</option><option>srednji</option><option>napredni</option></select>
+      </label>
+      <label>Treningov na teden
+        <select name="dni_na_teden"><option>2</option><option selected>3</option><option>4</option><option>5</option><option>6</option></select>
+      </label>
+      <label>Trajanje treninga (min)<input name="trajanje_min" type="number" min="15" max="120" value="45" required></label>
+      <label>Starost (neobvezno)<input name="starost" type="number" min="12" max="100"></label>
+      <label>Teža v kg (neobvezno)<input name="teza_kg" type="number" min="30" max="250" step="0.5"></label>
+      <fieldset class="siroko"><legend>Razpoložljiva oprema</legend>
+        <label><input type="checkbox" name="oprema" value="brez" checked> brez (lastna teža)</label>
+        <label><input type="checkbox" name="oprema" value="ročke" checked> ročke</label>
+        <label><input type="checkbox" name="oprema" value="palica"> palica</label>
+        <label><input type="checkbox" name="oprema" value="drog"> drog</label>
+        <label><input type="checkbox" name="oprema" value="škripec"> škripec</label>
+      </fieldset>
+      <fieldset class="siroko"><legend>Poudarek na mišičnih skupinah (neobvezno)</legend>
+        <label><input type="checkbox" name="fokus" value="noge"> noge</label>
+        <label><input type="checkbox" name="fokus" value="prsi"> prsi</label>
+        <label><input type="checkbox" name="fokus" value="hrbet"> hrbet</label>
+        <label><input type="checkbox" name="fokus" value="ramena"> ramena</label>
+        <label><input type="checkbox" name="fokus" value="roke"> roke</label>
+        <label><input type="checkbox" name="fokus" value="trebuh"> trebuh</label>
+      </fieldset>
+      <label class="siroko">Poškodbe ali omejitve (neobvezno)
+        <textarea name="omejitve" rows="2" maxlength="300" placeholder="npr. bolečine v spodnjem delu hrbta"></textarea>
+      </label>
+      <div class="siroko"><button id="poslji">Sestavi načrt</button>
+        <div id="stanje">Načrt se bo začel glede na tvoj trenutni čas: <span id="cas"></span></div>
+      </div>
+    </form>
+  </section>
+
+  <section id="rezultat"></section>
+</main>
+
+<script>
+// ---------- razredi, v katere se deserializira JSON odgovor (enaki kot NacrtVadbe v llm_nacrt.py) ----------
+class VajaNacrta {
+  constructor(o) {
+    this.ime = String(o.ime); this.vajaId = o.vaja_id ?? null; this.misicnaSkupina = String(o.misicna_skupina);
+    this.serije = Number(o.serije); this.ponovitve = String(o.ponovitve); this.pocitekS = Number(o.pocitek_s);
+    this.opomba = String(o.opomba ?? "");
+  }
+  get izBaze() { return this.vajaId !== null; }
+}
+class DanVadbe {
+  constructor(o) {
+    this.dan = String(o.dan); this.datum = new Date(o.datum); this.poudarek = String(o.poudarek);
+    this.trajanjeMin = Number(o.trajanje_min); this.ogrevanje = String(o.ogrevanje); this.ohlajanje = String(o.ohlajanje);
+    this.vaje = o.vaje.map(v => new VajaNacrta(v));
+  }
+  get skupnoSerij() { return this.vaje.reduce((s, v) => s + v.serije, 0); }
+}
+class NacrtVadbe {
+  constructor(o) {
+    if (!o || !Array.isArray(o.dnevi)) throw new Error("JSON nima pričakovane oblike (manjka 'dnevi').");
+    this.naslov = String(o.naslov); this.povzetek = String(o.povzetek);
+    this.dnevi = o.dnevi.map(d => new DanVadbe(d));
+    this.nasveti = o.nasveti ?? []; this.opozorila = o.opozorila ?? [];
+  }
+  static izJson(json) { return new NacrtVadbe(typeof json === "string" ? JSON.parse(json) : json); }
+}
+
+// ---------- obrazec ----------
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const lokalniCas = () => { const d = new Date(); return new Date(d - d.getTimezoneOffset() * 60000).toISOString().slice(0, 19); };
+$("cas").textContent = new Date().toLocaleString("sl-SI", { weekday: "long", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
+
+function zberiVnos() {
+  const f = new FormData($("obrazec"));
+  const stevilo = k => f.get(k) ? Number(f.get(k)) : null;
+  return {
+    ime: f.get("ime").trim(), cilj: f.get("cilj"), raven: f.get("raven"),
+    dni_na_teden: stevilo("dni_na_teden"), trajanje_min: stevilo("trajanje_min"),
+    starost: stevilo("starost"), teza_kg: stevilo("teza_kg"),
+    oprema: f.getAll("oprema"), fokus: f.getAll("fokus"), omejitve: f.get("omejitve").trim(),
+    lokalni_cas: lokalniCas(), casovni_pas: Intl.DateTimeFormat().resolvedOptions().timeZone,
+  };
+}
+
+function prikazi(nacrt, odgovor) {
+  const dnevi = nacrt.dnevi.map(d => `
+    <article class="kartica">
+      <h3>${esc(d.dan)}, ${d.datum.toLocaleDateString("sl-SI")}</h3>
+      <p class="opis">${esc(d.poudarek)} · ${d.trajanjeMin} min · ${d.skupnoSerij} serij</p>
+      <p class="opis"><b>Ogrevanje:</b> ${esc(d.ogrevanje)}</p>
+      <table>
+        <tr><th>Vaja</th><th>Serije × pon.</th><th>Počitek</th><th>Opomba</th></tr>
+        ${d.vaje.map(v => `<tr>
+          <td>${esc(v.ime)}${v.izBaze ? `<span class="znacka" title="vaja iz baze vaje.xml">${esc(v.vajaId)}</span>` : ""}<br><small class="opis">${esc(v.misicnaSkupina)}</small></td>
+          <td>${v.serije} × ${esc(v.ponovitve)}</td><td>${v.pocitekS} s</td><td>${esc(v.opomba)}</td></tr>`).join("")}
+      </table>
+      <p class="opis" style="margin-top:8px"><b>Ohlajanje:</b> ${esc(d.ohlajanje)}</p>
+    </article>`).join("");
+  $("rezultat").innerHTML = `
+    <section class="kartica">
+      <h2>${esc(nacrt.naslov)}</h2>
+      <p>${esc(nacrt.povzetek)}</p>
+      ${nacrt.opozorila.map(o => `<p class="opozorilo">⚠ ${esc(o)}</p>`).join("")}
+      <ul>${nacrt.nasveti.map(n => `<li>${esc(n)}</li>`).join("")}</ul>
+      <p class="opis">${odgovor.statistika.vaj} vaj, ${odgovor.statistika.iz_baze} % iz lastne baze · model ${esc(odgovor.model)}</p>
+      <details><summary>Poslani prompt</summary><pre>${esc(odgovor.prompt)}</pre></details>
+      <details><summary>Prejeti JSON</summary><pre>${esc(JSON.stringify(odgovor.nacrt, null, 2))}</pre></details>
+    </section>
+    <div class="dnevi">${dnevi}</div>`;
+}
+
+$("obrazec").onsubmit = async e => {
+  e.preventDefault();
+  const vnos = zberiVnos(), stanje = $("stanje"), gumb = $("poslji");
+  if (!vnos.oprema.length) { stanje.className = "napaka"; stanje.textContent = "Izberi vsaj eno vrsto opreme."; return; }
+  gumb.disabled = true; stanje.className = ""; stanje.textContent = "Model sestavlja načrt (lahko traja do pol minute) …";
+  try {
+    const odgovor = await fetch("/api/nacrt", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(vnos) });
+    const json = await odgovor.json();
+    if (!odgovor.ok) throw new Error(json.napaka || odgovor.statusText);
+    prikazi(NacrtVadbe.izJson(json.nacrt), json);
+    stanje.textContent = "Načrt sestavljen " + new Date().toLocaleTimeString("sl-SI") + ".";
+  } catch (err) {
+    stanje.className = "napaka"; stanje.textContent = "Napaka: " + err.message;
+  } finally {
+    gumb.disabled = false;
+  }
+};
+</script>
+</body>
+</html>

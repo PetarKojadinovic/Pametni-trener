@@ -14,11 +14,14 @@ data/
 main.py            filtriranje in izvoz XML podatkov
 scraper.py         razčlenjevalnik spletne strani z vajami
 test_scraper.py    preizkusi razčlenjevalnika (brez omrežja)
-requirements.txt   knjižnice za scraper.py
+requirements.txt   knjižnice za scraper.py in llm_nacrt.py
 pxparser.py        razčlenjevalnik datotek PC-Axis (.px)
 odprti_podatki.py  spletna aplikacija z odprtimi podatki SURS
 test_pxparser.py   preizkusi razčlenjevalnika PX (brez omrežja)
 web/index.html     stran z grafi (Chart.js)
+llm_nacrt.py       načrt vadbe z LLM (Claude API, strukturiran JSON)
+test_llm_nacrt.py  preizkusi prompta in deserializacije (brez omrežja)
+web/nacrt.html     obrazec in prikaz načrta vadbe
 data/px/           zadnje prenesene datoteke PX (rezerva, če SI-STAT ni dosegljiv)
 primer_izhoda/
   filtrirano.json  primer izvoza v JSON
@@ -144,4 +147,52 @@ Preizkusi:
 
 ```
 python -m unittest -v test_pxparser
+```
+
+## Načrt vadbe z LLM (`llm_nacrt.py`, `web/nacrt.html`)
+
+Aplikacija uporabniku sestavi osebni tedenski načrt vadbe s pomočjo modela Claude (Anthropic, Claude API). Stran je dostopna na `http://localhost:8000/nacrt.html` (povezava je tudi na glavni strani).
+
+**Vhodni podatki** (nič ni statično):
+- obrazec: cilj (spustni meni), izkušnje, število treningov na teden, trajanje, oprema in mišične skupine (potrditvena polja), starost, teža, poškodbe/omejitve (besedilo);
+- brskalnik: trenutni lokalni čas, dan v tednu in časovni pas (`Intl`), na podlagi katerih model razporedi treninge po datumih (po 18. uri se načrt začne naslednji dan);
+- lastni podatki: vaje iz `data/vaje.xml`, filtrirane po izbrani opremi, ki jih model po možnosti uporabi in navede njihov ID.
+
+**Dinamičen prompt:** `sestavi_prompt()` iz teh podatkov sestavi besedilo, npr.:
+
+```
+Cilj: povečati največjo moč (nizko število ponovitev, daljši počitki).
+Vadi lahko 4-krat na teden, vsakič največ 45 minut ...
+Razpoložljiva oprema: brez, drog. Ne predlagaj vaj, ki zahtevajo drugo opremo.
+Danes je torek, 2026-11-03, ura 16:38 (Europe/Ljubljana). Načrt se lahko začne danes ...
+- v04: Sklece (prsi, oprema: brez, težavnost 2/5)
+- v05: Zgibe (hrbet, oprema: drog, težavnost 4/5)
+```
+
+**Strukturiran izhod (JSON):** model se kliče z `client.messages.parse(..., output_format=NacrtVadbe)`. API iz razreda ustvari shemo JSON in zagotovi, da odgovor ustreza shemi; SDK ga nato deserializira v objekte:
+
+| Razred (Pydantic, `llm_nacrt.py`) | Polja |
+|---|---|
+| `NacrtVadbe` | naslov, povzetek, dnevi[], nasveti[], opozorila[] |
+| `DanVadbe` | dan, datum, poudarek, trajanje_min, ogrevanje, vaje[], ohlajanje |
+| `VajaNacrta` | ime, vaja_id (ID iz `vaje.xml` ali `null`), misicna_skupina, serije, ponovitve, pocitek_s, opomba |
+
+Tudi vhod je razred (`VnosUporabnika`), ki preveri tipe in meje (npr. 1–6 dni, dovoljene vrednosti opreme). Na odjemalcu so v `web/nacrt.html` enaki razredi v JavaScriptu (`NacrtVadbe.izJson()`), iz katerih stran izriše načrt. Pod načrtom sta za preverjanje prikazana poslani prompt in prejeti JSON.
+
+Zagon:
+
+```
+pip install -r requirements.txt
+set ANTHROPIC_API_KEY=sk-ant-...        (PowerShell: $env:ANTHROPIC_API_KEY="sk-ant-...")
+python odprti_podatki.py
+python llm_nacrt.py --cilj moč --dni 4 --oprema brez drog     # v konzoli
+python llm_nacrt.py --samo-prompt                              # samo prompt, brez klica API
+```
+
+Privzeti model je `claude-opus-5-5`; drugega nastavimo z okoljsko spremenljivko `PAMETNI_MODEL` (npr. `claude-haiku-5-5` za cenejše preizkuse).
+
+Preizkusi (brez klica API, z lažnim odjemalcem):
+
+```
+python -m unittest -v test_llm_nacrt
 ```
